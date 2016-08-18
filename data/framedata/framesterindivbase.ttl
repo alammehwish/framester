@@ -1,0 +1,60 @@
+@prefix classif: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#> .
+@prefix special: <http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix fschema: <http://www.ontologydesignpatterns.org/ont/framester/framester.owl#> .
+@prefix frame:   <http://www.ontologydesignpatterns.org/ont/framenet/abox/frame/> .
+@prefix fn15schema:  <http://www.ontologydesignpatterns.org/ont/framenet/tbox/> .
+@prefix vn31schema: <http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#> .
+@prefix wn30schema: <http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/> .
+@prefix wn30instances: <http://www.ontologydesignpatterns.org/ont/wn/wn30/instances/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix framestercore: <http://www.ontologydesignpatterns.org/ont/framester/data/framestercore.ttl#> .
+
+
+<http://www.ontologydesignpatterns.org/ont/framester/data/framestersynbase.ttl> rdf:type owl:Ontology ;
+ rdfs:comment """The synset frames derived from WordNet synsets (IndivBaseX profile) that accurately match FrameNet framal lexical units,
+and can be considered always subsumed under a core Framester frame. Notice that "trope-like" synsets (e.g. 'donor')
+are not used to derive new synset frames. This dataset contains punning: synset frames are axiomatized as both individuals and classes (including frame occurrence).""" ;
+ owl:versionInfo """1.0, 19-04-2016 by Aldo Gangemi""" ;
+ owl:imports <http://www.ontologydesignpatterns.org/ont/framester/framester.owl> ;
+ owl:imports <http://www.ontologydesignpatterns.org/ont/framester/data/framestercore.ttl>.
+
+wn30instances:synset-Satan-noun-1
+        a       fschema:WnInstance .
+
+wn30instances:synset-Evening_Prayer-noun-1
+        a       fschema:WnInstance .
+
+wn30instances:synset-Godhead-noun-1
+        a       fschema:WnInstance .
+
+wn30instances:synset-Moon-noun-1
+        a       fschema:WnInstance .
+
+wn30instances:synset-grail-noun-2
+        a       fschema:WnInstance .
+
+framestercore:Rite  fschema:occurringWithIndividual
+                wn30instances:synset-Evening_Prayer-noun-1 .
+
+wn30instances:synset-sun-noun-1
+        a       fschema:WnInstance .
+
+wn30instances:synset-Earth-noun-1
+        a       fschema:WnInstance .
+
+framestercore:Locale  fschema:occurringWithIndividual
+                wn30instances:synset-sun-noun-1 , wn30instances:synset-Moon-noun-1 , wn30instances:synset-Earth-noun-1 .
+
+framestercore:ReligiousBelief
+        fschema:occurringWithIndividual
+                wn30instances:synset-Godhead-noun-1 , wn30instances:synset-Satan-noun-1 , wn30instances:synset-God-noun-1 .
+
+wn30instances:synset-God-noun-1
+        a       fschema:WnInstance .
+
+framestercore:Containers
+        fschema:occurringWithIndividual
+                wn30instances:synset-grail-noun-2 .

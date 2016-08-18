@@ -1,0 +1,741 @@
+@base <http://www.ontologydesignpatterns.org/ont/framester/data/frame-vnrole.ttl> .
+@prefix : <http://www.ontologydesignpatterns.org/ont/framester/data/frame-vnrole.ttl#> .
+@prefix framester: <http://www.ontologydesignpatterns.org/ont/framester/framester.owl#> .
+@prefix frame-vnrole: <http://www.ontologydesignpatterns.org/ont/framester/data/frame-vnrole.ttl#> .
+@prefix framestersyn: <http://www.ontologydesignpatterns.org/ont/framester/data/framestersyn.ttl#> .
+@prefix framestercore: <http://www.ontologydesignpatterns.org/ont/framester/data/framestercore.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dands: <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#> .
+@prefix semio: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix classif: <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#> .
+@prefix special: <http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix fschema: <http://www.ontologydesignpatterns.org/ont/framester/framester.owl#> .
+@prefix frame:   <http://www.ontologydesignpatterns.org/ont/framenet/abox/frame/> .
+@prefix fn:  <http://www.ontologydesignpatterns.org/ont/framenet/tbox/> .
+@prefix fn15schema:  <http://www.ontologydesignpatterns.org/ont/framenet/tbox/> .
+@prefix vn31schema: <http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#> .
+@prefix wn30schema: <http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/> .
+@prefix wn30instances: <http://www.ontologydesignpatterns.org/ont/wn/wn30/instances/> .
+@prefix vndata: <http://www.ontologydesignpatterns.org/ont/vn/vn31/data/> .
+@prefix vnschema: <http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#> .
+@prefix wntroperole: <http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-verbnountropes.rdf#> .
+@prefix gfe:   <http://www.ontologydesignpatterns.org/ont/framenet/abox/gfe/> .
+@prefix framesterrole: <http://www.ontologydesignpatterns.org/ont/framester/data/framesterrole.ttl#> .
+
+<http://www.ontologydesignpatterns.org/ont/framester/data/frame-vnrole.ttl> rdf:type owl:Ontology ;
+ rdfs:comment """Framester's core frames with their generic roles as inferred from VerbNet's alignment.""" ;
+ owl:versionInfo """1.0, 19-04-2016 by Aldo Gangemi""" ;
+ owl:imports <http://www.ontologydesignpatterns.org/ont/framester/framester.owl> .
+
+framestercore:Questioning
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:CauseChange
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:CauseChangeOfConsistency
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:BeingNamed
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Damaging
+        framester:vnRole  framesterrole:agent , framesterrole:form , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Grinding
+        framester:vnRole  framesterrole:form , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Certainty
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Employing
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Destroying
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:undergoer , framesterrole:physical , framesterrole:eventuality .
+
+framestercore:Birth  framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer .
+
+framestercore:Revenge
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseToFragment
+        framester:vnRole  framesterrole:form , framesterrole:instrument , framesterrole:physical , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Expectation
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:experiencer , framesterrole:theme .
+
+framestercore:FormingRelationships
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:ProcessContinue
+        framester:vnRole  framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Daring  framester:vnRole  framesterrole:location , framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Reporting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Institutionalization
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Expensiveness
+        framester:vnRole  framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme , framesterrole:quality .
+
+framestercore:ManipulateIntoDoing
+        framester:vnRole  framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:category , framesterrole:theme .
+
+framestercore:AchievingFirst
+        framester:vnRole  framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:agent , framesterrole:eventuality , framesterrole:category , framesterrole:theme .
+
+framestercore:Heralding
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseToMoveInPlace
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Prohibiting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:OperateVehicle
+        framester:vnRole  framesterrole:theme , framesterrole:oblique , framesterrole:agent , framesterrole:location , framesterrole:eventuality .
+
+framestercore:ActivityStop
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:theme .
+
+framestercore:Frugality
+        framester:vnRole  framesterrole:cause , framesterrole:undergoer , framesterrole:agent , framesterrole:asset , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Dimension
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme , framesterrole:quality .
+
+framestercore:Misdeed
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Emitting
+        framester:vnRole  framesterrole:location , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Adorning
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ShootProjectiles
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:theme , framesterrole:eventuality .
+
+framestercore:Dispersal
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Competition
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:HitTarget
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:quality , framesterrole:instrument , framesterrole:undergoer .
+
+framestercore:CauseTemperatureChange
+        framester:vnRole  framesterrole:form , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:SettingFire
+        framester:vnRole  framesterrole:output , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Taking  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Residence
+        framester:vnRole  framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Arriving
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:oblique , framesterrole:location , framesterrole:theme .
+
+framestercore:ComingToBelieve
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:BecomeSilent
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Sending
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme , framesterrole:location .
+
+framestercore:ProcessStart
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:oblique , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Assessing
+        framester:vnRole  framesterrole:theme , framesterrole:quality , framesterrole:agent , framesterrole:eventuality .
+
+framestercore:Motion  framester:vnRole  framesterrole:oblique , framesterrole:location , framesterrole:theme , framesterrole:eventuality , framesterrole:agent .
+
+framestercore:PerceptionExperience
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:cause .
+
+framestercore:CauseHarm
+        framester:vnRole  framesterrole:cause , framesterrole:eventuality , framesterrole:experiencer , framesterrole:emotion , framesterrole:undergoer , framesterrole:quality , framesterrole:location , framesterrole:agent , framesterrole:instrument , framesterrole:form , framesterrole:theme .
+
+framestercore:Compatibility
+        framester:vnRole  framesterrole:undergoer , framesterrole:physical , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Corroding
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:location , framesterrole:theme , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:InchoativeAttaching
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:physical .
+
+framestercore:Statement
+        framester:vnRole  framesterrole:emotion , framesterrole:experiencer , framesterrole:undergoer , framesterrole:category , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Evoking
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:output , framesterrole:eventuality .
+
+framestercore:InchoativeChangeOfTemperature
+        framester:vnRole  framesterrole:form , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:CommunicationManner
+        framester:vnRole  framesterrole:category , framesterrole:agent , framesterrole:cause , framesterrole:oblique , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ActivityPrepare
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:output , framesterrole:eventuality .
+
+framestercore:PerceptionActive
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:cause .
+
+framestercore:MovingInPlace
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CommunicationNoise
+        framester:vnRole  framesterrole:location , framesterrole:category , framesterrole:agent , framesterrole:cause , framesterrole:oblique , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:NameConferral
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Prevarication
+        framester:vnRole  framesterrole:location , framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Collaboration
+        framester:vnRole  framesterrole:category , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:IntentionallyCreate
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:Robbery
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Telling
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Rite  framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Preventing
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:RideVehicle
+        framester:vnRole  framesterrole:theme , framesterrole:oblique , framesterrole:agent , framesterrole:location , framesterrole:eventuality .
+
+framestercore:TextCreation
+        framester:vnRole  framesterrole:category , framesterrole:material , framesterrole:output , framesterrole:undergoer , framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseMotion
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:theme , framesterrole:eventuality .
+
+framestercore:Theft  framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Escaping
+        framester:vnRole  framesterrole:eventuality , framesterrole:oblique , framesterrole:location , framesterrole:theme .
+
+framestercore:Travel  framester:vnRole  framesterrole:oblique , framesterrole:location , framesterrole:theme , framesterrole:eventuality , framesterrole:agent .
+
+framestercore:Predicting
+        framester:vnRole  framesterrole:cause , framesterrole:undergoer , framesterrole:category , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:NotificationOfCharges
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Reading
+        framester:vnRole  framesterrole:experiencer , framesterrole:cause , framesterrole:agent , framesterrole:eventuality , framesterrole:category .
+
+framestercore:RevealSecret
+        framester:vnRole  framesterrole:undergoer , framesterrole:category , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:FluidicMotion
+        framester:vnRole  framesterrole:oblique , framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Bungling
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Manufacturing
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:Evidence
+        framester:vnRole  framesterrole:agent , framesterrole:cause , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:ProcessStop
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ProcessingMaterials
+        framester:vnRole  framesterrole:location , framesterrole:theme , framesterrole:agent , framesterrole:material , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:GatheringUp
+        framester:vnRole  framesterrole:agent , framesterrole:physical , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Avoiding
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:ChangeOfLeadership
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Departing
+        framester:vnRole  framesterrole:agent , framesterrole:oblique , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Feeling
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:cause .
+
+framestercore:Catastrophe
+        framester:vnRole  framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Kidnapping
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Attack  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Preference
+        framester:vnRole  framesterrole:emotion , framesterrole:eventuality , framesterrole:experiencer , framesterrole:theme .
+
+framestercore:PersonalRelationship
+        framester:vnRole  framesterrole:category , framesterrole:theme , framesterrole:agent , framesterrole:eventuality .
+
+framestercore:ExperienceBodilyHarm
+        framester:vnRole  framesterrole:experiencer , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:CookingCreation
+        framester:vnRole  framesterrole:form , framesterrole:instrument , framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:Firing  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:theme .
+
+framestercore:Cotheme
+        framester:vnRole  framesterrole:category , framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Desiring
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:theme .
+
+framestercore:CommunicationResponse
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Emptying
+        framester:vnRole  framesterrole:location , framesterrole:instrument , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Cogitation
+        framester:vnRole  framesterrole:cause , framesterrole:emotion , framesterrole:experiencer , framesterrole:eventuality .
+
+framestercore:Abundance
+        framester:vnRole  framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Choosing
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Evading
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:oblique , framesterrole:location , framesterrole:theme .
+
+framestercore:Event  framester:vnRole  framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:ActivityStart
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:oblique , framesterrole:theme .
+
+framestercore:Purpose
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:theme .
+
+framestercore:CauseChangeOfPhase
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:ProcessResume
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:oblique , framesterrole:theme .
+
+framestercore:CommerceCollect
+        framester:vnRole  framesterrole:asset , framesterrole:cause , framesterrole:undergoer , framesterrole:agent , framesterrole:physical , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Execution
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:QuittingAPlace
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:oblique , framesterrole:location , framesterrole:theme .
+
+framestercore:EducationTeaching
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:eventuality , framesterrole:category .
+
+framestercore:MotionDirectional
+        framester:vnRole  framesterrole:oblique , framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:RewardsAndPunishments
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseToStart
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Bringing
+        framester:vnRole  framesterrole:entity , framesterrole:oblique , framesterrole:location , framesterrole:agent , framesterrole:theme , framesterrole:eventuality .
+
+framestercore:Breathing
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ApplyHeat
+        framester:vnRole  framesterrole:agent , framesterrole:form , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:CauseExpansion
+        framester:vnRole  framesterrole:quality , framesterrole:location , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Communication
+        framester:vnRole  framesterrole:cause , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:category .
+
+framestercore:Excreting
+        framester:vnRole  framesterrole:location , framesterrole:oblique , framesterrole:theme , framesterrole:agent , framesterrole:eventuality .
+
+framestercore:Giving  framester:vnRole  framesterrole:asset , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Emanating
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ChangeOfPhase
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:TalkingInto
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Reliance
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:SelfMotion
+        framester:vnRole  framesterrole:cause , framesterrole:undergoer , framesterrole:agent , framesterrole:oblique , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Commitment
+        framester:vnRole  framesterrole:category , framesterrole:theme , framesterrole:agent , framesterrole:eventuality .
+
+framestercore:ClaimOwnership
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Similarity
+        framester:vnRole  framesterrole:theme .
+
+framestercore:Filling
+        framester:vnRole  framesterrole:instrument , framesterrole:material , framesterrole:undergoer , framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Participation
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:SoundMovement
+        framester:vnRole  framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Precipitation
+        framester:vnRole  framesterrole:eventuality , framesterrole:theme , framesterrole:category .
+
+framestercore:Preserving
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:GrantPermission
+        framester:vnRole  framesterrole:location , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ExpressingPublicly
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Smuggling
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Existence
+        framester:vnRole  framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Grooming
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer .
+
+framestercore:Justifying
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Closure
+        framester:vnRole  framesterrole:instrument , framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:physical , framesterrole:eventuality .
+
+framestercore:MotionNoise
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Scrutiny
+        framester:vnRole  framesterrole:experiencer , framesterrole:cause , framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:HostileEncounter
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:Duplication
+        framester:vnRole  framesterrole:instrument , framesterrole:undergoer , framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:HairConfiguration
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer .
+
+framestercore:Verdict
+        framester:vnRole  framesterrole:cause , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Appearance
+        framester:vnRole  framesterrole:eventuality , framesterrole:experiencer , framesterrole:cause .
+
+framestercore:Assistance
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:BehindTheScenes
+        framester:vnRole  framesterrole:output , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:BecomingAware
+        framester:vnRole  framesterrole:agent , framesterrole:theme , framesterrole:eventuality , framesterrole:experiencer , framesterrole:cause .
+
+framestercore:Wearing
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Quitting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:Ingestion
+        framester:vnRole  framesterrole:oblique , framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer .
+
+framestercore:SpellingAndPronouncing
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Categorization
+        framester:vnRole  framesterrole:material , framesterrole:output , framesterrole:theme , framesterrole:quality , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:AttemptSuasion
+        framester:vnRole  framesterrole:category , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Quarreling
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:MakingFaces
+        framester:vnRole  framesterrole:agent , framesterrole:cause , framesterrole:oblique , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Releasing
+        framester:vnRole  framesterrole:cause , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:PerceptionBody
+        framester:vnRole  framesterrole:cause , framesterrole:eventuality , framesterrole:experiencer , framesterrole:undergoer .
+
+framestercore:Judgment
+        framester:vnRole  framesterrole:cause , framesterrole:emotion , framesterrole:experiencer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Killing
+        framester:vnRole  framesterrole:category , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:theme .
+
+framestercore:ChangeOfConsistency
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Removing
+        framester:vnRole  framesterrole:undergoer , framesterrole:agent , framesterrole:theme , framesterrole:eventuality , framesterrole:location .
+
+framestercore:CauseToWake
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:CommerceSell
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Impact  framester:vnRole  framesterrole:theme , framesterrole:location , framesterrole:quality , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:experiencer , framesterrole:instrument .
+
+framestercore:Defend  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Cure  framester:vnRole  framesterrole:instrument , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CommunicationMeans
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Eclipse
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:location , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:LightMovement
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:JudgmentCommunication
+        framester:vnRole  framesterrole:cause , framesterrole:oblique , framesterrole:undergoer , framesterrole:emotion , framesterrole:experiencer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CommerceBuy
+        framester:vnRole  framesterrole:undergoer , framesterrole:agent , framesterrole:asset , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Forgiveness
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ComingToBe
+        framester:vnRole  framesterrole:asset , framesterrole:undergoer , framesterrole:location , framesterrole:theme , framesterrole:agent , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:CauseToBeDry
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Getting
+        framester:vnRole  framesterrole:undergoer , framesterrole:agent , framesterrole:asset , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseToBeWet
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Replacing
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:location , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:ChangePositionOnAScale
+        framester:vnRole  framesterrole:oblique , framesterrole:theme , framesterrole:quality , framesterrole:location , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Expansion
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Surpassing
+        framester:vnRole  framesterrole:quality , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Chatting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:category .
+
+framestercore:Gesture
+        framester:vnRole  framesterrole:agent , framesterrole:cause , framesterrole:eventuality , framesterrole:undergoer , framesterrole:theme .
+
+framestercore:AddingUp
+        framester:vnRole  framesterrole:theme , framesterrole:quality , framesterrole:agent , framesterrole:undergoer , framesterrole:physical , framesterrole:eventuality .
+
+framestercore:CommunicateCategorization
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:BodyMovement
+        framester:vnRole  framesterrole:location , framesterrole:experiencer , framesterrole:cause , framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:OperationalTesting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Placing
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Piracy  framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Seeking
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Receiving
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:CauseToAmalgamate
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:undergoer , framesterrole:physical , framesterrole:eventuality .
+
+framestercore:Awareness
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Fining  framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Amalgamation
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:WakingUp
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:CorrodingCaused
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:location , framesterrole:theme , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Thwarting
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:BeingEmployed
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:category , framesterrole:theme .
+
+framestercore:Chemical-senseDescription
+        framester:vnRole  framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Contacting
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:CauseImpact
+        framester:vnRole  framesterrole:theme , framesterrole:location , framesterrole:quality , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:experiencer , framesterrole:instrument .
+
+framestercore:MakeNoise
+        framester:vnRole  framesterrole:agent , framesterrole:cause , framesterrole:undergoer , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Causation
+        framester:vnRole  framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Weather
+        framester:vnRole  framesterrole:eventuality , framesterrole:theme , framesterrole:category .
+
+framestercore:Hindering
+        framester:vnRole  framesterrole:agent , framesterrole:theme , framesterrole:cause , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:PathShape
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:oblique , framesterrole:location , framesterrole:theme .
+
+framestercore:ChangePosture
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality .
+
+framestercore:Halt  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:theme .
+
+framestercore:Reshaping
+        framester:vnRole  framesterrole:form , framesterrole:instrument , framesterrole:undergoer , framesterrole:agent , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:CommercePay
+        framester:vnRole  framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Containing
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:eventuality , framesterrole:location , framesterrole:quality .
+
+framestercore:JudgmentDirectAddress
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Request
+        framester:vnRole  framesterrole:asset , framesterrole:theme , framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Rotting
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:location , framesterrole:theme , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Cutting
+        framester:vnRole  framesterrole:form , framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Building
+        framester:vnRole  framesterrole:agent , framesterrole:asset , framesterrole:undergoer , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:SocialEvent
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:category , framesterrole:theme .
+
+framestercore:Sign  framester:vnRole  framesterrole:agent , framesterrole:cause , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:Manipulation
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:material , framesterrole:output , framesterrole:eventuality .
+
+framestercore:ExperiencerObj
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:cause , framesterrole:emotion , framesterrole:experiencer , framesterrole:eventuality .
+
+framestercore:Suasion
+        framester:vnRole  framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Sleep  framester:vnRole  framesterrole:agent , framesterrole:eventuality .
+
+framestercore:MassMotion
+        framester:vnRole  framesterrole:agent , framesterrole:physical , framesterrole:eventuality , framesterrole:location , framesterrole:theme .
+
+framestercore:Hiring  framester:vnRole  framesterrole:asset , framesterrole:theme , framesterrole:agent , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Death  framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:ActivityFinish
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:instrument , framesterrole:theme .
+
+framestercore:LocationOfLight
+        framester:vnRole  framesterrole:agent , framesterrole:location , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Deserving
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:Partiality
+        framester:vnRole  framesterrole:emotion , framesterrole:eventuality , framesterrole:experiencer , framesterrole:theme .
+
+framestercore:Permitting
+        framester:vnRole  framesterrole:location , framesterrole:undergoer , framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:AmountingTo
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme , framesterrole:quality .
+
+framestercore:Silencing
+        framester:vnRole  framesterrole:agent , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:DenyPermission
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:theme .
+
+framestercore:SpeakOnTopic
+        framester:vnRole  framesterrole:agent , framesterrole:eventuality , framesterrole:undergoer , framesterrole:category .
+
+framestercore:AbsorbHeat
+        framester:vnRole  framesterrole:agent , framesterrole:form , framesterrole:instrument , framesterrole:undergoer , framesterrole:eventuality .
+
+framestercore:Posture
+        framester:vnRole  framesterrole:location , framesterrole:agent , framesterrole:cause , framesterrole:eventuality , framesterrole:undergoer , framesterrole:theme .
+
+framestercore:Attaching
+        framester:vnRole  framesterrole:instrument , framesterrole:agent , framesterrole:undergoer , framesterrole:physical , framesterrole:eventuality .
