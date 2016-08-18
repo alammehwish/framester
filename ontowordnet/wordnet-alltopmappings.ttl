@@ -1,0 +1,2594 @@
+@prefix ontopic: <http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#> .
+@prefix : <http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-alltopmappings.rdf#> .
+@prefix wn30instances: <http://www.ontologydesignpatterns.org/ont/wn/wn30/instances/> .
+@prefix own2dul: <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#> .
+@prefix wn30schema: <http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix conc: <http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#> .
+@prefix coll: <http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix rol: <http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dulplus: <http://www.ontologydesignpatterns.org/ont/wn/wn30/dulplus.rdf#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-alltopmappings.rdf> a owl:Ontology ;
+	owl:imports <http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/> , <http://www.ontologydesignpatterns.org/ont/wn/wn30/dulplus.rdf> , <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl> .
+
+wn30instances:synset-block-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-dead_letter-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-middling-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-treasure-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-synset-ball-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:BiologicalObject .
+
+wn30instances:synset-news_event-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-conflict-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-environmental_condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-ethnic_group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-experience-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-pile-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-class-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:Taxon .
+
+wn30instances:synset-mail-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-natural_shape-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-object-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-stratification-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-agglomeration-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-topic-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-Victoriana-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-birthplace-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-normality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-collection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-top-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-opening-noun-10 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-air-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-abstraction-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Description .
+
+wn30instances:synset-whole-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-activator-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-support-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-corner-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-tip-off-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Narrative .
+
+wn30instances:synset-quantity-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-repair-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-ribbon-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-crash-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-activity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-whacker-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-target-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-occupation-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-power-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-voice-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-selectivity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-goal-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Goal .
+
+wn30instances:synset-geographical_area-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-group-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-content-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-own_right-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-producer-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-synset-orangery-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-sign-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-basic-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-block-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-wrongdoing-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-datum-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-decoration-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-plan-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Plan .
+
+wn30instances:synset-distance-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-physical_condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-whole-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-interruption-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-isomerism-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-landmark-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-saturation-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-rogue_s_gallery-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-vital_principle-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-display-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-tension-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-mecca-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-flash-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-round_shape-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-repertory-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-drug-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-southland-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-fixture-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-gather-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-top_of_the_line-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-hole-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-catch-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-psychic_communication-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-corner-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-intergalactic_space-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-trichion-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-fabric-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-kingdom-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:Taxon .
+
+wn30instances:synset-visual_communication-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-cocoon-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-pitch-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-circle-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Pattern .
+
+wn30instances:synset-public_knowledge-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-order-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Method .
+
+wn30instances:synset-inactivity-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-cheerfulness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-straggle-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-tankage-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-avalanche-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-voice-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-adulterant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-atmosphere-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-backlog-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-finding-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-dystopia-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-representation-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-animal_group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-space-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-heredity-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-unemployment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-noise_conditions-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-vacuum-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-nub-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-field-noun-11 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-curve-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-paring-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-sunspot-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-perception-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-right-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-hiding_place-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-excavation-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-generation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:GeneticCollection .
+
+wn30instances:synset-space-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-load-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-atmosphere-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-volatile-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-curve-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-affinity-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-left-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-outbreak-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-unconnectedness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-theorem-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-theme-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-right-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-nonalignment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-baldness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-perimeter-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-ligand-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-octane_number-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-gathering-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-economic_process-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Process .
+
+wn30instances:synset-inaction-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-flare-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-luck-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-library-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-object-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-bottle_collection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-polarization-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-pounder-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-cutting-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-integrity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-Bertillon_system-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Method .
+
+wn30instances:synset-people-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-finish-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-mixture-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-body_substance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-political_system-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-luck-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-wetness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-mass-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-improvement-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-stigmatism-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-figure-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Pattern .
+
+wn30instances:synset-cognitive_state-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-reaction-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-interplanetary_space-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-library-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-boom-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-orderliness-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-platoon-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-reverse-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-string-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-publication-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-irredenta-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-workplace-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-ana-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Narrative .
+
+wn30instances:synset-foundation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-mass-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-personality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-innocence-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-ensemble-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-freshener-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-background-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-acquaintance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-back-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-mind-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-auditory_communication-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-weakness-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-enclosure-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-rule-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Norm .
+
+wn30instances:synset-division-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:Taxon .
+
+wn30instances:synset-biological_group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:Taxon .
+
+wn30instances:synset-string-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-artifact-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-viability-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-issue-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-organization-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organization .
+
+wn30instances:synset-reciprocality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-comfort-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-location-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-convoy-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-preliminary-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-dominance-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-center-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-event-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-vocabulary-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-weather-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-address-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-condition-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-subculture-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-time-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:TimeInterval .
+
+wn30instances:synset-enclosure-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-paralanguage-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-set-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Set .
+
+wn30instances:synset-anomaly-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-precedent-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-receivership-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-mechanism-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-arrangement-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-field-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-stinker-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-subpart-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-lore-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-set-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-sign_of_the_zodiac-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-document-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-heliosphere-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-carcinogen-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-variable-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul owl:Thing .
+
+wn30instances:synset-living_thing-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAgent .
+
+wn30instances:synset-bodily_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-course-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-agent-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-navel-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:BiologicalObject .
+
+wn30instances:synset-hypothesis-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Theory .
+
+wn30instances:synset-biogeographical_region-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-temporal_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-indication-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-degree-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Parameter .
+
+wn30instances:synset-creation-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-sum-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-treasure_trove-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-limit-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-scientific_knowledge-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-show-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-string-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-nature-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-taxonomic_group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:Taxon .
+
+wn30instances:synset-covering-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-setting-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-contagion-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Process .
+
+wn30instances:synset-pass-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-physical_entity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-hell-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-aerospace-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-business_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-antecedent-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-dryness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-property-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-interest-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-sum-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-variation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-damnation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-multitude-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-fortune-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-causality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-interrelation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-descendants-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-body-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-safety-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-paving-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-natural_object-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-spiritual_being-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-sample-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-episode-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-religion-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-site-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-way-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-member-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-subgroup-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-ennoblement-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-blind_spot-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-sainthood-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-content-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-group_action-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-omniscience-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-body-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-vagabond-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-chemistry-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-angular_shape-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-tactile_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-port-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-antihero-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-dishabille-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-site-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-there-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-tangle-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-model-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-language-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-shiner-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-control-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Norm .
+
+wn30instances:synset-teacher-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-acquisition-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-aviation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-fluid-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-dependence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-draw-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-sample-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-social_event-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-silence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-character-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-exception-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-wild-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-synset-roller-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-square-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-indebtedness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Obligation .
+
+wn30instances:synset-lead-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-natural_resource-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-body-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organism .
+
+wn30instances:synset-celibacy-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul rol:Status .
+
+wn30instances:synset-pack-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-essence-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-drift-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-scour-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-hoodoo-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Person .
+
+wn30instances:synset-motion-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-supernatural-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-pole-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-clostridium_perfringens-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organism .
+
+wn30instances:synset-enterprise-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organization .
+
+wn30instances:synset-connection-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-spatial_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-traffic-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-contact-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-possession-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-denaturant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-evidence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-lie-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-turn-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-hilum-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-omnipotence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-demand-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-topographic_point-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-climate-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-cell-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:BiologicalObject .
+
+wn30instances:synset-beginning-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-danger-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Description .
+
+wn30instances:synset-role-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Role .
+
+wn30instances:synset-fluid-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-substance-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-transferred_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-machine-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAgent .
+
+wn30instances:synset-unknown_quantity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-might-have-been-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-coin_collection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-race-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:GeneticCollection .
+
+wn30instances:synset-metabolite-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-hairlessness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-compound-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:ChemicalObject .
+
+wn30instances:synset-causal_agent-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul owl:Thing .
+
+wn30instances:synset-magnetic_flux-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-population-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-exhibition-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-purity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-standard_of_living-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Method .
+
+wn30instances:synset-plant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-substance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-social_group-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-whereabouts-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-way-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-connection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-entity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-building_material-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-imperfection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-purity-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-grave-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-volume-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-consistency-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-danger-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-art_collection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-residue-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-continuance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-anachronism-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-expanse-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-measure-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-phenomenon-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-fullness-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-elevated_railway-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-behavior-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-turgor-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-outside-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-end-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-extremity-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-person-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Person .
+
+wn30instances:synset-natural_process-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Process .
+
+wn30instances:synset-phase-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-logical_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-university-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-volume-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-place-noun-15 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-homelessness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-armamentarium-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-entrant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-centerline-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-kin-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:GeneticCollection .
+
+wn30instances:synset-surface-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-reinstatement-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-fragment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-crossing-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-feature-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-repertoire-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-solid-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-situation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-cognitive_factor-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-confluence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-being-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-galaxy-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-McBurney_s_point-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-batch-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-rule-noun-11 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-sheet-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-engine-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-convergence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-psychological_state-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-employment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-act-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-autopilot-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAgent .
+
+wn30instances:synset-prosecution-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-focus-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-statistic-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-situation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-northland-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-import-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-outburst-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-opposition-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-circumstances-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-place-noun-13 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-reservoir-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-rendezvous-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-radius-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-district-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-antipodes-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-sale-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-focus-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-data-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-instrumentality-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-galaxy-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-position-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-discipline-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-world-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-growth-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-temporary_state-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-zone-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-procession-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-edibility-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-motivation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-chemical_element-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:ChemicalObject .
+
+wn30instances:synset-magnetic_pole-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-ethos-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Theory .
+
+wn30instances:synset-culture_medium-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-stimulation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-statuary-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-signal-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-military_position-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-hyalinization-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-idol-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-line-noun-18 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-immaturity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-boundary-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-motionlessness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-sludge-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-outer_space-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-showplace-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-post-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-combination-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-home-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-law-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-film-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-thing-noun-12 a own2dul:TopMappingSynset ;
+	own2dul:dul owl:Thing .
+
+wn30instances:synset-form-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Pattern .
+
+wn30instances:synset-circumstance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-peak-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-solitude-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-power_tool-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-deep_space-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-hindrance-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-protoplasm-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-black_hole-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-blob-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-depth-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-freedom-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-solvate-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-marker-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-success-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-stop-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-lexis-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-booklet-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-etiology-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-periodic_event-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-eventuality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-minority-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-absolute-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Abstract .
+
+wn30instances:synset-industry-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-virginity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-behavior-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-line-noun-11 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-circuit-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-solid-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-stamp_collection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-relations-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-polling_place-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-need-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-time_period-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:TimeInterval .
+
+wn30instances:synset-package-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-disagreement-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-abutment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-creation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-practice-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Method .
+
+wn30instances:synset-written_communication-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-sediment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-remains-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-set-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-region-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-hand-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-automaton-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAgent .
+
+wn30instances:synset-bottom-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-disposition-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-society-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-edition-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-stainability-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-impurity-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-time_interval-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:TimeInterval .
+
+wn30instances:synset-half-mast-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-part-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-inhibitor-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-history-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-quality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-geological_formation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#GeographicalFeature> .
+
+wn30instances:synset-white_elephant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Description .
+
+wn30instances:synset-guilt-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-region-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-law-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Theory .
+
+wn30instances:synset-segment-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-place-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-inessential-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-hopefulness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-anticipation-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Plan .
+
+wn30instances:synset-astigmatism-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-miracle-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-commodity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-acicula-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-position-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Person .
+
+wn30instances:synset-disappearance-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-law-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Norm .
+
+wn30instances:synset-calculation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-side-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-distorted_shape-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-philosopher_s_stone-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-place-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-symbol-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-bunch-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-use-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-miracle-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-atonicity-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-inability-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-quality-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-position-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-radiator-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-relationship-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-station-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-juncture-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-accompaniment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-mythology-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-despair-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-taste_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-ending-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-body_part-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:BiologicalObject .
+
+wn30instances:synset-subject-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-comparison-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-olfactory_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-ordinary-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-practice-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Method .
+
+wn30instances:synset-geodesic-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-congregation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-relationship-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-process-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-supply-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-soundness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-domain-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-structure-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Pattern .
+
+wn30instances:synset-focus-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-congregation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-decline-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-function-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-part-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-menagerie-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-molecule-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:ChemicalObject .
+
+wn30instances:synset-movement-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-relationship-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-assortment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-incident-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-region-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-unsusceptibility-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-niche-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-bricks_and_mortar-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-uncheerfulness-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-part-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-batch-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-ski_conditions-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-process-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Process .
+
+wn30instances:synset-attempt-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-structure-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-sound-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-eye_condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-necessity-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-constitution-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-padding-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-high-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-black_body-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-null_set-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Set .
+
+wn30instances:synset-metaknowledge-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-action-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-insert-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-emergence-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-moon-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-change-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-grace-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-oldness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-end-noun-10 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-emptiness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-strip-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-manner-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-overlook-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-kinship-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-process-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Process .
+
+wn30instances:synset-part-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-death-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-works-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-movement-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-mathematical_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-coagulation_factor-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-change-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-body_of_water-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-strip-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-holy_place-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-ownership-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Right .
+
+wn30instances:synset-parhelion-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-job_lot-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-change-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-illumination-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-ability-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-defense-noun-7 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-bedding_material-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-sanitary_condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-gimmickry-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-feeling-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-happening-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-matter-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-equivalent-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-serration-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-celestial_point-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-polls-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-tenantry-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-zodiac-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-scale-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-emergence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-union-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-oldness-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-ownership-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-reading-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-consequence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-atom-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:ChemicalObject .
+
+wn30instances:synset-land-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-deus_ex_machina-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-conditionality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-wonder-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-status-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul rol:Status .
+
+wn30instances:synset-load-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-area-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-failure-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-theory-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Theory .
+
+wn30instances:synset-message-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-cognition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-celestial_body-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-chemical_irritant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-case-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-curvature-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-slice-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-destiny-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-unit-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-accident-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-readiness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-Bacillus_anthracis-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organism .
+
+wn30instances:synset-actinism-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-poison-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-visual_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-backwater-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-linguistic_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-nuclear_deterrence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-thing-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-inside-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-tilth-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-solubility-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalAttribute .
+
+wn30instances:synset-union-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-land-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-system-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-fauna-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-layer-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-neighbor-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-here-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-refrigerant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-ballast-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-unknown-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-base-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-tribe-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-ice-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-resistance-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-nest-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-system-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-communication-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-message-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationRealization .
+
+wn30instances:synset-attitude-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-office-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-organized_crime-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organization .
+
+wn30instances:synset-hunk-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-unit-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-leaven-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-utopia-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Theory .
+
+wn30instances:synset-phylum-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:InformationCollection .
+
+wn30instances:synset-discomfort-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-fleet-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-export-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-vanishing_point-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-skillfulness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-treasure-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-market-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-battery-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-belt-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-fuel-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-disorder-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-fleet-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-otherworld-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-trait-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-magnitude_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-emanation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-youngness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-consumer_goods-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-plant_part-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:BiologicalObject .
+
+wn30instances:synset-pharmacopoeia-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-thing-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-unsoundness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-difficulty-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-front-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#SpatialFeature> .
+
+wn30instances:synset-head-noun-17 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-appearance-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-food-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-lath_and_plaster-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-item-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-nonaccomplishment-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-medium-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-imaginary_place-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-temporal_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-element-noun-5 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-circumstance-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-imminence-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-epicenter-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-universe-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-fleet-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-precipitant-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-solute-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-nonevent-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-kernel-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-vegetation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-abnormality-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-detail-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-corpus-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPart> .
+
+wn30instances:synset-start-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-force-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-asterism-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-substrate-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-item-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-security_blanket-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul conc:InternalRepresentation .
+
+wn30instances:synset-nakedness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-cycle-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-politics-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-routine-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-world-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:System .
+
+wn30instances:synset-maturity-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-shapelessness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-allergen-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-fact-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-biota-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-thing-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul owl:Thing .
+
+wn30instances:synset-susceptibility-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-float-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-social_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-straight_line-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SpaceRegion .
+
+wn30instances:synset-quintessence-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-wall-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-universe-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul ontopic:Topic .
+
+wn30instances:synset-imaginary_being-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-old_wives__tale-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Narrative .
+
+wn30instances:synset-professional_relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:SocialRelation .
+
+wn30instances:synset-ionosphere-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Substance .
+
+wn30instances:synset-rock-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalBody .
+
+wn30instances:synset-thing-noun-9 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-inheritance-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-material-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-attribute-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Region .
+
+wn30instances:synset-citizenry-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collective .
+
+wn30instances:synset-medium-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-line-noun-22 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-configuration-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-nonbeing-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-population-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul coll:AgentCollection .
+
+wn30instances:synset-sound_property-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-first_cause-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-asset-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Quality .
+
+wn30instances:synset-provision-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Action .
+
+wn30instances:synset-hostility-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-financial_condition-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-junction-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-fire-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-corner-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#DependentPlace> .
+
+wn30instances:synset-mare-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalPlace .
+
+wn30instances:synset-perfection-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-corpus-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-hypostasis-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Personification .
+
+wn30instances:synset-catalyst-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-pool-noun-8 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-organism-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Organism .
+
+wn30instances:synset-plaything-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:DesignedArtifact .
+
+wn30instances:synset-constellation-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Collection .
+
+wn30instances:synset-ferment-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-example-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:InformationObject .
+
+wn30instances:synset-disorder-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-column-noun-4 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Pattern .
+
+wn30instances:synset-state-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-surface-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul <http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#GeographicalFeature> .
+
+wn30instances:synset-vantage-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-remainder-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-magnitude-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-medium-noun-6 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-casus_belli-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Task .
+
+wn30instances:synset-fact-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-operator-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Person .
+
+wn30instances:synset-nesting_place-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-trouble-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:EventType .
+
+wn30instances:synset-discharge-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Event .
+
+wn30instances:synset-stand-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-midair-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-common_denominator-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Amount .
+
+wn30instances:synset-parameter-noun-2 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Parameter .
+
+wn30instances:synset-relation-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Relation .
+
+wn30instances:synset-apology-noun-3 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-grinding-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:FunctionalSubstance .
+
+wn30instances:synset-web-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:PhysicalObject .
+
+wn30instances:synset-disorderliness-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Situation .
+
+wn30instances:synset-service_area-noun-1 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .
+
+wn30instances:synset-base-noun-14 a own2dul:TopMappingSynset ;
+	own2dul:dul dul:Place .

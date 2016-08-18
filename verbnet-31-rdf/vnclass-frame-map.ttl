@@ -1,0 +1,788 @@
+@base  <http://www.ontologydesignpatterns.org/ont/vn/vn31/data/vnclass-frame-map.ttl> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix verbnet31sem: <http://www.ontologydesignpatterns.org/ont/vn/vn31/data/verbnet31sem/> .
+@prefix frame: <http://www.ontologydesignpatterns.org/ont/framenet/abox/frame/> .
+@prefix vnschema: <http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wn30schema: <http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vndata: <http://www.ontologydesignpatterns.org/ont/vn/vn31/data/> .
+
+vndata:verbclass-sound_emission-43.2
+ skos:closeMatch frame:Communication_noise , frame:Make_noise , frame:Motion_noise .
+
+vndata:verbclass-see-30.1-1
+ skos:closeMatch frame:Perception_experience .
+
+vndata:verbclass-groom-41.1.2
+ skos:closeMatch frame:Grooming .
+
+vndata:verbclass-debone-10.8
+ skos:closeMatch frame:Emptying .
+
+vndata:verbclass-long-32.2-1
+ skos:closeMatch frame:Experiencer_subj , frame:Desiring .
+
+vndata:verbclass-differ-23.4
+ skos:closeMatch frame:Similarity .
+
+vndata:verbclass-shake-22.3-2
+ skos:closeMatch frame:Inchoative_attaching , frame:Attaching .
+
+vndata:verbclass-assuming_position-50
+ skos:closeMatch frame:Change_posture .
+
+vndata:verbclass-force-59-1
+ skos:closeMatch frame:Attempt_suasion , frame:Prevarication , frame:Manipulate_into_doing .
+
+vndata:verbclass-hunt-35.1
+ skos:closeMatch frame:Seeking .
+
+vndata:verbclass-risk-94
+ skos:closeMatch frame:Daring , frame:Statement .
+
+vndata:verbclass-modes_of_being_with_motion-47.3
+ skos:closeMatch frame:Motion , frame:Self_motion , frame:Body_movement , frame:Moving_in_place , frame:Cause_to_move_in_place .
+
+vndata:verbclass-create-26.4-1
+ skos:closeMatch frame:Evoking , frame:Invention , frame:Behind_the_scenes .
+
+vndata:verbclass-hurt-40.8.3-1
+ skos:closeMatch frame:Experience_bodily_harm .
+
+vndata:verbclass-indicate-78
+ skos:closeMatch frame:Evidence , frame:Predicting .
+
+vndata:verbclass-drive-11.5-1
+ skos:closeMatch frame:Bringing .
+
+vndata:verbclass-separate-23.1-2
+ skos:closeMatch frame:Separation .
+
+vndata:verbclass-escape-51.1-2
+ skos:closeMatch frame:Path_shape , frame:Motion , frame:Arriving , frame:Change_position_on_a_scale , frame:Motion_directional .
+
+vndata:verbclass-spank-18.3
+ skos:closeMatch frame:Cause_harm .
+
+vndata:verbclass-tape-22.4
+ skos:closeMatch frame:Closure , frame:Attaching .
+
+vndata:verbclass-put_spatial-9.2-1
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-vehicle-51.4.1-1
+ skos:closeMatch frame:Bringing , frame:Operate_vehicle .
+
+vndata:verbclass-meet-36.3-2
+ skos:closeMatch frame:Hostile_encounter , frame:Quarreling .
+
+vndata:verbclass-marvel-31.3-5
+ skos:closeMatch frame:Experiencer_obj , frame:Experiencer_subj .
+
+vndata:verbclass-remove-10.1
+ skos:closeMatch frame:Change_of_leadership , frame:Removing .
+
+vndata:verbclass-bring-11.3-1
+ skos:closeMatch frame:Bringing .
+
+vndata:verbclass-linger-53.1
+ skos:closeMatch frame:Prevarication .
+
+vndata:verbclass-image_impression-25.1
+ skos:closeMatch frame:Processing_materials .
+
+vndata:verbclass-roll-51.3.1
+ skos:closeMatch frame:Cause_to_move_in_place , frame:Motion_directional , frame:Path_shape , frame:Moving_in_place , frame:Motion .
+
+vndata:verbclass-concealment-16
+ skos:closeMatch frame:Eclipse .
+
+vndata:verbclass-declare-29.4-2
+ skos:closeMatch frame:Becoming_aware , frame:Awareness , frame:Deserving .
+
+vndata:verbclass-spatial_configuration-47.6
+ skos:closeMatch frame:Posture .
+
+vndata:verbclass-send-11.1
+ skos:closeMatch frame:Bringing , frame:Sending .
+
+vndata:verbclass-correspond-36.1
+ skos:closeMatch frame:Amalgamation .
+
+vndata:verbclass-curtsey-40.3.3
+ skos:closeMatch frame:Body_movement .
+
+vndata:verbclass-contiguous_location-47.8
+ skos:closeMatch frame:Closure , frame:Contacting , frame:Cotheme , frame:Adorning , frame:Path_shape , frame:Containing .
+
+vndata:verbclass-pit-10.7
+ skos:closeMatch frame:Emptying .
+
+vndata:verbclass-cost-54.2
+ skos:closeMatch frame:Expensiveness .
+
+vndata:verbclass-risk-94-1
+ skos:closeMatch frame:Statement , frame:Daring .
+
+vndata:verbclass-cooking-45.3
+ skos:closeMatch frame:Absorb_heat , frame:Cause_temperature_change , frame:Inchoative_change_of_temperature , frame:Cooking_creation , frame:Apply_heat .
+
+vndata:verbclass-waltz-51.5
+ skos:closeMatch frame:Self_motion .
+
+vndata:verbclass-swat-18.2
+ skos:closeMatch frame:Cause_harm .
+
+vndata:verbclass-clear-10.3-1
+ skos:closeMatch frame:Emptying , frame:Removing .
+
+vndata:verbclass-destroy-44
+ skos:closeMatch frame:Cause_to_fragment , frame:Damaging , frame:Destroying .
+
+vndata:verbclass-gobble-39.3-2
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-say-37.7
+ skos:closeMatch frame:Text_creation , frame:Telling , frame:Expressing_publicly , frame:Reveal_secret , frame:Communication_response , frame:Statement .
+
+vndata:verbclass-fill-9.8
+ skos:closeMatch frame:Placing , frame:Filling , frame:Adorning .
+
+vndata:verbclass-create-26.4
+ skos:closeMatch frame:Building , frame:Text_creation , frame:Achieving_first , frame:Cooking_creation , frame:Manufacturing , frame:Intentionally_create , frame:Coming_to_be , frame:Invention .
+
+vndata:verbclass-devour-39.4-2
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-wink-40.3.1
+ skos:closeMatch frame:Body_movement .
+
+vndata:verbclass-swarm-47.5.1-2
+ skos:closeMatch frame:Mass_motion .
+
+vndata:verbclass-nonvehicle-51.4.2
+ skos:closeMatch frame:Travel , frame:Bringing , frame:Operate_vehicle , frame:Ride_vehicle .
+
+vndata:verbclass-build-26.1
+ skos:closeMatch frame:Coming_to_be , frame:Invention , frame:Building , frame:Cooking_creation .
+
+vndata:verbclass-push-12-1
+ skos:closeMatch frame:Manipulation .
+
+vndata:verbclass-substance_emission-43.4
+ skos:closeMatch frame:Emitting , frame:Mass_motion , frame:Emanating , frame:Excreting , frame:Fluidic_motion .
+
+vndata:verbclass-smell_emission-43.3
+ skos:closeMatch frame:Chemical-sense_description .
+
+vndata:verbclass-engender-27
+ skos:closeMatch frame:Causation , frame:Cause_to_start , frame:Birth .
+
+vndata:verbclass-exist-47.1-1
+ skos:closeMatch frame:Existence , frame:Process_continue .
+
+vndata:verbclass-say-37.7-1
+ skos:closeMatch frame:Statement .
+
+vndata:verbclass-turn-26.6.1
+ skos:closeMatch frame:Reshaping , frame:Categorization .
+
+vndata:verbclass-body_internal_states-40.6
+ skos:closeMatch frame:Body_movement .
+
+vndata:verbclass-approve-77
+ skos:closeMatch frame:Awareness .
+
+vndata:verbclass-marvel-31.3-8
+ skos:closeMatch frame:Experiencer_obj , frame:Experiencer_subj , frame:Cogitation .
+
+vndata:verbclass-exhale-40.1.3-1
+ skos:closeMatch frame:Breathing , frame:Emitting .
+
+vndata:verbclass-performance-26.7-2
+ skos:closeMatch frame:Text_creation , frame:Behind_the_scenes .
+
+vndata:verbclass-murder-42.1
+ skos:closeMatch frame:Execution , frame:Killing .
+
+vndata:verbclass-spray-9.7-1
+ skos:closeMatch frame:Placing , frame:Filling .
+
+vndata:verbclass-admit-65
+ skos:closeMatch frame:Grant_permission , frame:Permitting .
+
+vndata:verbclass-bump-18.4-1
+ skos:closeMatch frame:Impact .
+
+vndata:verbclass-wink-40.3.1-1
+ skos:closeMatch frame:Gesture , frame:Body_movement .
+
+vndata:verbclass-linger-53.1-1
+ skos:closeMatch frame:Hindering .
+
+vndata:verbclass-send-11.1-1
+ skos:closeMatch frame:Sending .
+
+vndata:verbclass-cheat-10.6
+ skos:closeMatch frame:Cure , frame:Robbery , frame:Removing , frame:Emptying .
+
+vndata:verbclass-occurrence-48.3
+ skos:closeMatch frame:Catastrophe , frame:Daring , frame:Event .
+
+vndata:verbclass-complain-37.8
+ skos:closeMatch frame:Statement .
+
+vndata:verbclass-characterize-29.2-1
+ skos:closeMatch frame:Judgment_communication , frame:Categorization .
+
+vndata:verbclass-captain-29.8
+ skos:closeMatch frame:Commitment .
+
+vndata:verbclass-cut-21.1-1
+ skos:closeMatch frame:Experience_bodily_harm , frame:Cause_harm , frame:Damaging .
+
+vndata:verbclass-order-60-1
+ skos:closeMatch frame:Request .
+
+vndata:verbclass-calibratable_cos-45.6-1
+ skos:closeMatch frame:Cause_expansion , frame:Cause_change_of_scalar_position , frame:Change_position_on_a_scale .
+
+vndata:verbclass-wipe_manner-10.4.1
+ skos:closeMatch frame:Removing .
+
+vndata:verbclass-throw-17.1-1
+ skos:closeMatch frame:Cause_impact , frame:Shoot_projectiles , frame:Cause_motion .
+
+vndata:verbclass-lodge-46
+ skos:closeMatch frame:Residence .
+
+vndata:verbclass-animal_sounds-38
+ skos:closeMatch frame:Make_noise , frame:Communication_noise .
+
+vndata:verbclass-crane-40.3.2
+ skos:closeMatch frame:Posture , frame:Self_motion , frame:Body_movement .
+
+vndata:verbclass-eat-39.1-1
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-bill-54.5
+ skos:closeMatch frame:Commerce_collect , frame:Frugality .
+
+vndata:verbclass-pain-40.8.1
+ skos:closeMatch frame:Perception_body .
+
+vndata:verbclass-marvel-31.3-3
+ skos:closeMatch frame:Experiencer_subj .
+
+vndata:verbclass-suspect-81
+ skos:closeMatch frame:Judgement , frame:Judgement_communication , frame:Notification_of_charges .
+
+vndata:verbclass-breathe-40.1.2-1
+ skos:closeMatch frame:Breathing , frame:Excreting .
+
+vndata:verbclass-bump-18.4
+ skos:closeMatch frame:Impact .
+
+vndata:verbclass-chew-39.2-1
+ skos:closeMatch frame:Grinding , frame:Ingestion .
+
+vndata:verbclass-exceed-90
+ skos:closeMatch frame:Surpassing .
+
+vndata:verbclass-obtain-13.5.2
+ skos:closeMatch frame:Receiving , frame:Choosing , frame:Taking , frame:Commerce_collect .
+
+vndata:verbclass-light_emission-43.1
+ skos:closeMatch frame:Light_movement , frame:Location_of_light .
+
+vndata:verbclass-talk-37.5
+ skos:closeMatch frame:Statement .
+
+vndata:verbclass-instr_communication-37.4
+ skos:closeMatch frame:Communication_means , frame:Contacting .
+
+vndata:verbclass-confine-92-1
+ skos:closeMatch frame:Institutionalization , frame:Cause_confinement .
+
+vndata:verbclass-rely-70
+ skos:closeMatch frame:Reliance .
+
+vndata:verbclass-murder-42.1-1
+ skos:closeMatch frame:Killing .
+
+vndata:verbclass-order-60
+ skos:closeMatch frame:Grant_permission , frame:Permitting .
+
+vndata:verbclass-calve-28
+ skos:closeMatch frame:Birth .
+
+vndata:verbclass-characterize-29.2
+ skos:closeMatch frame:Communicate_categorization .
+
+vndata:verbclass-poke-19
+ skos:closeMatch frame:Cause_harm .
+
+vndata:verbclass-carve-21.2-1
+ skos:closeMatch frame:Damaging , frame:Cutting , frame:Cause_to_fragment , frame:Grinding , frame:Cause_harm .
+
+vndata:verbclass-breathe-40.1.2
+ skos:closeMatch frame:Fluidic_motion , frame:Excreting .
+
+vndata:verbclass-butter-9.9
+ skos:closeMatch frame:Adorning , frame:Filling , frame:Fining .
+
+vndata:verbclass-hiccup-40.1.1
+ skos:closeMatch frame:Excreting .
+
+vndata:verbclass-captain-29.8-1
+ skos:closeMatch frame:Collaboration , frame:Social_event , frame:Achieving_first , frame:Commitment , frame:Education_teaching , frame:Killing , frame:Cotheme , frame:Manipulate_into_doing , frame:Being_employed .
+
+vndata:verbclass-conjecture-29.5-1
+ skos:closeMatch frame:Becoming_aware , frame:Statement , frame:Certainty , frame:Predicting , frame:Coming_to_believe , frame:Awareness , frame:Expectation .
+
+vndata:verbclass-forbid-67
+ skos:closeMatch frame:Deny_permission , frame:Thwarting , frame:Suasion , frame:Prohibiting , frame:Hindering , frame:Preventing .
+
+vndata:verbclass-coil-9.6
+ skos:closeMatch frame:Cause_to_move_in_place .
+
+vndata:verbclass-hit-18.1-1
+ skos:closeMatch frame:Hit_target , frame:Cause_impact , frame:Impact , frame:Cause_harm .
+
+vndata:verbclass-inquire-37.1.2
+ skos:closeMatch frame:Questioning .
+
+vndata:verbclass-put-9.1-1
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-conspire-71
+ skos:closeMatch frame:Revenge , frame:Misdeed , frame:Collaboration .
+
+vndata:verbclass-touch-20-1
+ skos:closeMatch frame:Cause_impact , frame:Impact .
+
+vndata:verbclass-long-32.2-2
+ skos:closeMatch frame:Desiring , frame:Experiencer_subj .
+
+vndata:verbclass-disassemble-23.3
+ skos:closeMatch frame:Closure , frame:Separation , frame:Attaching , frame:Destroying .
+
+vndata:verbclass-sound_existence-47.4
+ skos:closeMatch frame:Sound_movement , frame:Make_noise .
+
+vndata:verbclass-exchange-13.6
+ skos:closeMatch frame:Replacing .
+
+vndata:verbclass-want-32.1
+ skos:closeMatch frame:Experiencer_subj , frame:Desiring .
+
+vndata:verbclass-hurt-40.8.3-2
+ skos:closeMatch frame:Experience_bodily_harm .
+
+vndata:verbclass-steal-10.5
+ skos:closeMatch frame:Smuggling , frame:Removing , frame:Piracy , frame:Theft , frame:Kidnapping .
+
+vndata:verbclass-withdraw-82-3
+ skos:closeMatch frame:Quitting , frame:Departing , frame:Quitting_a_place .
+
+vndata:verbclass-help-72-1
+ skos:closeMatch frame:Assistance .
+
+vndata:verbclass-price-54.4
+ skos:closeMatch frame:Categorization , frame:Assessing .
+
+vndata:verbclass-marvel-31.3-6
+ skos:closeMatch frame:Experiencer_subj , frame:Judgment , frame:Experiencer_obj .
+
+vndata:verbclass-dub-29.3-1
+ skos:closeMatch frame:Name_conferral .
+
+vndata:verbclass-body_internal_motion-49
+ skos:closeMatch frame:Self_motion , frame:Body_movement .
+
+vndata:verbclass-equip-13.4.2
+ skos:closeMatch frame:Commerce_collect .
+
+vndata:verbclass-begin-55.1-1
+ skos:closeMatch frame:Process_resume , frame:Activity_start , frame:Process_start .
+
+vndata:verbclass-braid-41.2.2
+ skos:closeMatch frame:Hair_configuration , frame:Grooming .
+
+vndata:verbclass-pour-9.5
+ skos:closeMatch frame:Fluidic_motion .
+
+vndata:verbclass-snooze-40.4
+ skos:closeMatch frame:Sleep .
+
+vndata:verbclass-contribute-13.2-2
+ skos:closeMatch frame:Commerce_pay .
+
+vndata:verbclass-sight-30.2
+ skos:closeMatch frame:Reading , frame:Scrutiny , frame:Feeling , frame:Perception_experience , frame:Perception_active , frame:Becoming_aware .
+
+vndata:verbclass-indicate-78-1
+ skos:closeMatch frame:Communication , frame:Evidence , frame:Sign .
+
+vndata:verbclass-preparing-26.3-1
+ skos:closeMatch frame:Activity_prepare , frame:Setting_fire , frame:Cooking_creation .
+
+vndata:verbclass-get-13.5.1-1
+ skos:closeMatch frame:Getting .
+
+vndata:verbclass-register-54.1
+ skos:closeMatch frame:Adding_up , frame:Amounting_to , frame:Dimension .
+
+vndata:verbclass-advise-37.9
+ skos:closeMatch frame:Telling .
+
+vndata:verbclass-herd-47.5.2
+ skos:closeMatch frame:Gathering_up , frame:Mass_motion , frame:Congregating , frame:Commerce_collect .
+
+vndata:verbclass-disappearance-48.2
+ skos:closeMatch frame:Death , frame:Departing .
+
+vndata:verbclass-get-13.5.1
+ skos:closeMatch frame:Request , frame:Claim_ownership , frame:Choosing , frame:Hiring , frame:Commerce_buy , frame:Getting .
+
+vndata:verbclass-ferret-35.6
+ skos:closeMatch frame:Seeking .
+
+vndata:verbclass-lecture-37.11-1
+ skos:closeMatch frame:Speak_on_topic .
+
+vndata:verbclass-pelt-17.2
+ skos:closeMatch frame:Cause_harm .
+
+vndata:verbclass-marvel-31.3-1
+ skos:closeMatch frame:Experiencer_obj .
+
+vndata:verbclass-reach-51.8
+ skos:closeMatch frame:Arriving .
+
+vndata:verbclass-leave-51.2
+ skos:closeMatch frame:Departing .
+
+vndata:verbclass-refrain-69
+ skos:closeMatch frame:Avoiding , frame:Process_stop .
+
+vndata:verbclass-poison-42.2
+ skos:closeMatch frame:Killing , frame:Execution , frame:Cause_harm .
+
+vndata:verbclass-consume-66-1
+ skos:closeMatch frame:Frugality .
+
+vndata:verbclass-chit_chat-37.6
+ skos:closeMatch frame:Chatting .
+
+vndata:verbclass-exhale-40.1.3-2
+ skos:closeMatch frame:Breathing .
+
+vndata:verbclass-amalgamate-22.2-1
+ skos:closeMatch frame:Compatibility .
+
+vndata:verbclass-marvel-31.3-9
+ skos:closeMatch frame:Experiencer_obj .
+
+vndata:verbclass-wish-62
+ skos:closeMatch frame:Expectation , frame:Purpose .
+
+vndata:verbclass-other_cos-45.4
+ skos:closeMatch frame:Cause_change , frame:Cause_to_amalgamate , frame:Cure , frame:Preserving , frame:Killing , frame:Reshaping , frame:Categorization , frame:Corroding_caused , frame:Inchoative_change_of_temperature , frame:Eclipse , frame:Change_of_phase , frame:Waking_up , frame:Cause_change_of_phase , frame:Setting_fire , frame:Corroding , frame:Become_silent , frame:Dispersal , frame:Cause_to_be_dry , frame:Filling , frame:Experiencer_obj , frame:Amalgamation , frame:Emptying , frame:Bungling , frame:Cause_change_of_scalar_position , frame:Cause_to_be_wet , frame:Experience_bodily_harm , frame:Cause_temperature_change , frame:Rotting , frame:Cause_to_wake , frame:Cause_expansion , frame:Change_position_on_a_scale , frame:Rite , frame:Change_of_consistency , frame:Cause_change_of_consistency , frame:Separation , frame:Duplication , frame:Silencing , frame:Expansion .
+
+vndata:verbclass-hold-15.1-1
+ skos:closeMatch frame:Manipulation .
+
+vndata:verbclass-concealment-16-1
+ skos:closeMatch frame:Eclipse .
+
+vndata:verbclass-accompany-51.7
+ skos:closeMatch frame:Cotheme .
+
+vndata:verbclass-meander-47.7
+ skos:closeMatch frame:Motion , frame:Expansion , frame:Fluidic_motion , frame:Path_shape , frame:Motion_directional , frame:Self_motion .
+
+vndata:verbclass-coloring-24
+ skos:closeMatch frame:Processing_materials , frame:Filling .
+
+vndata:verbclass-run-51.3.2
+ skos:closeMatch frame:Travel , frame:Motion , frame:Self_motion .
+
+vndata:verbclass-avoid-52
+ skos:closeMatch frame:Evading , frame:Preventing , frame:Avoiding .
+
+vndata:verbclass-shake-22.3-1
+ skos:closeMatch frame:Cause_to_amalgamate .
+
+vndata:verbclass-settle-89
+ skos:closeMatch frame:Commitment , frame:Compatibility .
+
+vndata:verbclass-give-13.1-1
+ skos:closeMatch frame:Giving , frame:Commerce_buy , frame:Commerce_sell .
+
+vndata:verbclass-stimulus_subject-30.4
+ skos:closeMatch frame:Appearance , frame:Perception_active .
+
+vndata:verbclass-manner_speaking-37.3
+ skos:closeMatch frame:Statement , frame:Communication_manner , frame:Communication_noise .
+
+vndata:verbclass-entity_specific_modes_being-47.2
+ skos:closeMatch frame:Motion_noise , frame:Corroding_caused , frame:Dispersal , frame:Rotting , frame:Fluidic_motion , frame:Corroding .
+
+vndata:verbclass-allow-64
+ skos:closeMatch frame:Permitting .
+
+vndata:verbclass-cheat-10.6-1
+ skos:closeMatch frame:Emptying , frame:Removing , frame:Cure .
+
+vndata:verbclass-nonverbal_expression-40.2
+ skos:closeMatch frame:Communication_manner , frame:Judgment_communication , frame:Making_faces , frame:Communication_noise .
+
+vndata:verbclass-suffocate-40.7
+ skos:closeMatch frame:Killing , frame:Death .
+
+vndata:verbclass-separate-23.1-1
+ skos:closeMatch frame:Separation .
+
+vndata:verbclass-escape-51.1-1
+ skos:closeMatch frame:Quitting_a_place , frame:Path_shape , frame:Self_motion , frame:Arriving , frame:Departing , frame:Evading , frame:Escaping .
+
+vndata:verbclass-illustrate-25.3
+ skos:closeMatch frame:Filling .
+
+vndata:verbclass-eat-39.1-2
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-meet-36.3-1
+ skos:closeMatch frame:Competition .
+
+vndata:verbclass-floss-41.2.1
+ skos:closeMatch frame:Grooming .
+
+vndata:verbclass-chew-39.2-2
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-cooperate-73-2
+ skos:closeMatch frame:Participation .
+
+vndata:verbclass-put_spatial-9.2
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-declare-29.4-1
+ skos:closeMatch frame:Statement .
+
+vndata:verbclass-carry-11.4
+ skos:closeMatch frame:Cause_motion , frame:Bringing .
+
+vndata:verbclass-scribble-25.2
+ skos:closeMatch frame:Imitation , frame:Spelling_and_pronouncing , frame:Duplication , frame:Text_creation .
+
+vndata:verbclass-bend-45.2
+ skos:closeMatch frame:Reshaping .
+
+vndata:verbclass-appear-48.1.1
+ skos:closeMatch frame:Process_start , frame:Coming_to_be .
+
+vndata:verbclass-coil-9.6-1
+ skos:closeMatch frame:Cause_to_move_in_place .
+
+vndata:verbclass-entity_specific_cos-45.5
+ skos:closeMatch frame:Cause_expansion , frame:Cause_change_of_scalar_position , frame:Corroding_caused , frame:Rotting , frame:Corroding .
+
+vndata:verbclass-put-9.1
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-tingle-40.8.2
+ skos:closeMatch frame:Perception_body .
+
+vndata:verbclass-gorge-39.6
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-wipe_manner-10.4.1-1
+ skos:closeMatch frame:Removing .
+
+vndata:verbclass-transcribe-25.4
+ skos:closeMatch frame:Text_creation , frame:Duplication , frame:Imitation .
+
+vndata:verbclass-fit-54.3
+ skos:closeMatch frame:Containing .
+
+vndata:verbclass-gobble-39.3-1
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-carve-21.2-2
+ skos:closeMatch frame:Grinding , frame:Cause_harm , frame:Cutting .
+
+vndata:verbclass-conjecture-29.5-2
+ skos:closeMatch frame:Becoming_aware , frame:Statement .
+
+vndata:verbclass-devour-39.4-1
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-pay-68
+ skos:closeMatch frame:Frugality .
+
+vndata:verbclass-swarm-47.5.1-1
+ skos:closeMatch frame:Mass_motion , frame:Abundance , frame:Self_motion .
+
+vndata:verbclass-chase-51.6
+ skos:closeMatch frame:Cotheme .
+
+vndata:verbclass-advise-37.9-1
+ skos:closeMatch frame:Attempt_suasion , frame:Telling , frame:Statement .
+
+vndata:verbclass-grow-26.2
+ skos:closeMatch frame:Coming_to_be , frame:Invention .
+
+vndata:verbclass-weather-57
+ skos:closeMatch frame:Weather , frame:Precipitation .
+
+vndata:verbclass-pocket-9.10
+ skos:closeMatch frame:Cause_confinement , frame:Placing .
+
+vndata:verbclass-put-9.1-2
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-orphan-29.7
+ skos:closeMatch frame:Personal_relationship .
+
+vndata:verbclass-funnel-9.3-2
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-stop-55.4
+ skos:closeMatch frame:Halt , frame:Activity_finish , frame:Activity_stop , frame:Firing , frame:Killing .
+
+vndata:verbclass-drive-11.5
+ skos:closeMatch frame:Bringing .
+
+vndata:verbclass-search-35.2
+ skos:closeMatch frame:Seeking , frame:Scrutiny .
+
+vndata:verbclass-pocket-9.10-1
+ skos:closeMatch frame:Placing .
+
+vndata:verbclass-future_having-13.3
+ skos:closeMatch frame:Giving .
+
+vndata:verbclass-leave-51.2-1
+ skos:closeMatch frame:Departing .
+
+vndata:verbclass-feeding-39.7
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-performance-26.7-1
+ skos:closeMatch frame:Behind_the_scenes , frame:Invention .
+
+vndata:verbclass-reflexive_appearance-48.1.2
+ skos:closeMatch frame:Statement , frame:Reveal_secret .
+
+vndata:verbclass-knead-26.5
+ skos:closeMatch frame:Reshaping , frame:Manipulation .
+
+vndata:verbclass-dine-39.5
+ skos:closeMatch frame:Ingestion .
+
+vndata:verbclass-force-59
+ skos:closeMatch frame:Cause_to_start , frame:Hiring , frame:Employing , frame:Prevarication , frame:Suasion , frame:Daring , frame:Attempt_suasion , frame:Talking_into , frame:Cause_to_wake .
+
+vndata:verbclass-masquerade-29.6
+ skos:closeMatch frame:Assessing .
+
+vndata:verbclass-convert-26.6.2-1
+ skos:closeMatch frame:Replacing .
+
+vndata:verbclass-obtain-13.5.2-1
+ skos:closeMatch frame:Getting , frame:Commerce_buy .
+
+vndata:verbclass-battle-36.4-1
+ skos:closeMatch frame:Communication .
+
+vndata:verbclass-correspond-36.1-1
+ skos:closeMatch frame:Compatibility , frame:Collaboration .
+
+vndata:verbclass-admire-31.2
+ skos:closeMatch frame:Partiality , frame:Preference , frame:Statement , frame:Judgment , frame:Judgment_communication , frame:Experiencer_subj .
+
+vndata:verbclass-dress-41.1.1
+ skos:closeMatch frame:Grooming .
+
+vndata:verbclass-vehicle-51.4.1
+ skos:closeMatch frame:Bringing , frame:Ride_vehicle , frame:Operate_vehicle .
+
+vndata:verbclass-rummage-35.5
+ skos:closeMatch frame:Scrutiny , frame:Seeking .
+
+vndata:verbclass-judgement-33
+ skos:closeMatch frame:Judgment , frame:Grant_permission , frame:Judgment_communication , frame:Certainty , frame:Rewards_and_punishments , frame:Notification_of_charges , frame:Heralding , frame:Attack , frame:Forgiveness , frame:Judgment_direct_address .
+
+vndata:verbclass-limit-76
+ skos:closeMatch frame:Hindering , frame:Cause_change_of_scalar_position , frame:Cause_confinement .
+
+vndata:verbclass-tell-37.2
+ skos:closeMatch frame:Reporting , frame:Request , frame:Telling .
+
+vndata:verbclass-investigate-35.4
+ skos:closeMatch frame:Operational_testing , frame:Seeking , frame:Scrutiny .
+
+vndata:verbclass-banish-10.2
+ skos:closeMatch frame:Removing .
+
+vndata:verbclass-amuse-31.1
+ skos:closeMatch frame:Experiencer_subj , frame:Cause_harm , frame:Experiencer_obj .
+
+vndata:verbclass-defend-85
+ skos:closeMatch frame:Defend , frame:Justifying .
+
+vndata:verbclass-bring-11.3
+ skos:closeMatch frame:Bringing .
+
+vndata:verbclass-want-32.1-1
+ skos:closeMatch frame:Partiality , frame:Preference .
+
+vndata:verbclass-peer-30.3
+ skos:closeMatch frame:Perception_active .
+
+vndata:verbclass-help-72
+ skos:closeMatch frame:Assistance .
+
+vndata:verbclass-break-45.1
+ skos:closeMatch frame:Separation , frame:Cause_to_fragment , frame:Damaging .
+
+vndata:verbclass-complete-55.2
+ skos:closeMatch frame:Process_stop .
+
+vndata:verbclass-throw-17.1
+ skos:closeMatch frame:Removing .
+
+vndata:verbclass-give-13.1
+ skos:closeMatch frame:Giving .
+
+vndata:verbclass-free-80-1
+ skos:closeMatch frame:Verdict , frame:Releasing .
+
+vndata:verbclass-learn-14-1
+ skos:closeMatch frame:Reading , frame:Education_teaching .
+
+vndata:verbclass-simple_dressing-41.3.1
+ skos:closeMatch frame:Wearing .
+
+vndata:verbclass-split-23.2
+ skos:closeMatch frame:Separation , frame:Cause_to_fragment .
+
+vndata:verbclass-dub-29.3
+ skos:closeMatch frame:Being_named , frame:Name_conferral .
+
+vndata:verbclass-marry-36.2
+ skos:closeMatch frame:Forming_relationships , frame:Personal_relationship .
+
+vndata:verbclass-see-30.1
+ skos:closeMatch frame:Becoming_aware , frame:Perception_experience .
+
+vndata:verbclass-build-26.1-1
+ skos:closeMatch frame:Manufacturing , frame:Cause_change , frame:Building , frame:Cooking_creation , frame:Intentionally_create .
+
+vndata:verbclass-amalgamate-22.2-2
+ skos:closeMatch frame:Adding_up .
