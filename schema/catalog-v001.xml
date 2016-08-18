@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl" uri="file:/OWN3/LexicalClosure/ownfiles/own2dul.owl"/>
-    <uri id="Imports Wizard Entry" name="http://babelnet.org/rdf/" uri="http://babelnet.org/model/babelnet#"/>
-    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl" uri="file:/Users/stlab/Dropbox/Koi/Docs_Onto/Framester-svn/framester/verbnet-31-rdf/vnschema31.owl"/>
-    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/" uri="file:/Users/stlab/Dropbox/Koi/Docs_Onto/Framester-svn/framester/WordNet-30-RDF/wn30.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1470151845199" name="http://www.ontologydesignpatterns.org/ont/framester/framester.owl" uri="framester.owl"/>
-    </group>
-</catalog>
+version https://git-lfs.github.com/spec/v1
+oid sha256:13baddb08da375634651f48d40e0526021e8b9b131bdb3f5e07fb332ab6547f9
+size 1112
