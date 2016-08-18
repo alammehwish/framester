@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+    xmlns:CollectionsLite="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl#"
+    xmlns:conc="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#"
+    xmlns:ontopic="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#"
+    xmlns:Roles="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl#"
+    xmlns:Supplements="http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ontologydesignpatterns.org/ont/d0.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/Supplements.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/Roles.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/CollectionsLite.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="System">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">system</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Physical, social, political systems.	 viticulture, non-linear system, democracy, water system, etc. E.g. viticulture, non-linear system, democracy, water system, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="CognitiveEntity">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">cognitive entity</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Attitudes, cognitive abilities, ideologies, psychological phenomena, mind, etc. E.g. discernment, homophobia, precognition, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Activity">
+    <rdfs:label xml:lang="en">activity</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task">
+            <rdfs:subClassOf rdf:resource="#Activity"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action">
+            <rdfs:subClassOf rdf:resource="#Activity"/>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any action or task planned or executed by an agent intentionally causing and participating in it.	E.g. swimming, shopping, knowledge sharing, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Event">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">
+            <rdfs:subClassOf rdf:resource="#Event"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType">
+            <rdfs:subClassOf rdf:resource="#Event"/>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">event</rdfs:label>
+    <rdfs:label xml:lang="en">natural event</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any natural event, independently of its possible causes. E.g. avalanche, earthquake, brainwave, bonfire, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Characteristic">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality">
+            <rdfs:subClassOf rdf:resource="#Characteristic"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter">
+            <rdfs:subClassOf rdf:resource="#Characteristic"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
+            <rdfs:subClassOf rdf:resource="#Characteristic"/>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label xml:lang="en">characteristic</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An aspect or quality of a thing. E.g. radial symmetry, poker face, alkalinity, attractiveness, darkness, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Topic">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">topic</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any area, discipline, subject of knowledge. E.g. algebra, avionics, ballet, theology, engineering, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Location">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place">
+            <rdfs:subClassOf rdf:resource="#Location"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace">
+            <rdfs:subClassOf rdf:resource="#Location"/>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion">
+            <rdfs:subClassOf rdf:resource="#Location"/>
+          </rdf:Description>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label xml:lang="en">location</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A location, in a very generic sense e.g. geo-political entities, or physical object that are inherently located. E.g. Oslo, Australia, Inner Mongolia, resort area, intergalactic space, tundra, tunnel, etc.</rdfs:comment>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#InternalRepresentation">
+    <rdfs:subClassOf rdf:resource="#CognitiveEntity"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

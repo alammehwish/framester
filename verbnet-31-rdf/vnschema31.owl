@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl">
+  <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl"/>
+  <owl:Class rdf:ID="VerbSense"/>
+  <owl:Class rdf:ID="VerbClass"/>
+  <owl:Class rdf:ID="Predicate"/>
+  <owl:Class rdf:ID="Argument"/>
+  <owl:Class rdf:ID="SelectionalRestriction"/>
+  <owl:ObjectProperty rdf:ID="containsVerbSense">
+    <rdfs:domain rdf:resource="#VerbClass"/>
+    <rdfs:range rdf:resource="#VerbSense"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPredicate">
+    <rdfs:domain rdf:resource="#VerbClass"/>
+    <rdfs:range rdf:resource="#Predicate"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasArgument">
+    <rdfs:domain rdf:resource="#Predicate"/>
+    <rdfs:range rdf:resource="#Argument"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSelectionalRestriction">
+    <rdfs:domain rdf:resource="#Argument"/>
+    <rdfs:range rdf:resource="#SelectionalRestriction"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasNegativeSelectionalRestriction">
+    <rdfs:domain rdf:resource="#Argument"/>
+    <rdfs:range rdf:resource="#SelectionalRestriction"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="mapsToWordSenseKey">
+    <rdfs:domain rdf:resource="#VerbSense"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="offset">
+    <rdfs:domain rdf:resource="#VerbSense"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
