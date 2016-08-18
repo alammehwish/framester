@@ -1,0 +1,1598 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY wn30instances 'http://www.ontologydesignpatterns.org/ont/wn/wn30/'>
+    <!ENTITY wn30schema 'http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/'>
+]>
+
+<rdf:RDF
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xml:base="http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-entailment.rdf"
+    xmlns:owl="&owl;"
+    xmlns:wn30instances="&wn30instances;"
+    xmlns:wn30schema="&wn30schema;"
+    xml:lang="en-US">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-entailment.rdf"/>
+
+<rdf:Description rdf:about="&wn30instances;synset-breathe-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-exhale-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-inhale-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sneeze-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-exhale-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-oversleep-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-snore-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wake_up-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-soap-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-wash-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wear-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dress-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-conceive-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-copulate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-give_birth-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-conceive-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lie_in-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-give_birth-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-labor-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-give_birth-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-have_a_bun_in_the_oven-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-conceive-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-carry_to_term-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-have_a_bun_in_the_oven-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-abort-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-conceive-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-brood-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sit_down-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-menstruate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-ovulate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-administer-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-give-verb-20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bring_around-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-treat-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-exercise-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sober_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drink-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-freeze-dry-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-exsiccate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-mature-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-senesce-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-leak-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-break-verb-42"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-overhaul-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-repair-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-truncate-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut_off-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-baste-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cook-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-crust-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dry-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-leave-verb-12">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-die-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-demist-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-heat-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-curl-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-flex-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sublime-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-condense-verb-4"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-evaporate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-carbonize-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-heat-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cauterize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sear-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-freeze-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-solidify-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fuse-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-heat-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-macerate-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drench-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-putrefy-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smell-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-naturalize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-immigrate-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-immigrate-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-arrive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-settle-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-settle-verb-21">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-migrate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-emigrate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-leave-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-scale_down-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-decrease-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-scale_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-increase-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-stuff-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-tan-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-nitrify-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-oxidize-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dress-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-kill-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-master-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-understand-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-master-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drill-verb-3"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-learn-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-study-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-read-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-recognize-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-know-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-misremember-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-remember-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-proofread-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-read-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-solve-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-reason-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-get-verb-20">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-calculate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-survey-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-quantify-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-distinguish-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compare-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-identify-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-classify-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-come_round-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-reconsider-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-classify-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compare-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-categorize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compare-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-authenticate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-verify-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-choose-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compare-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-screen-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-extinguish-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-decide-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-debate-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-proselytize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-preach-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-argue-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-disagree-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-spy-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-investigate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-call-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dial-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hang_on-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-call-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tempt-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-attract-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-renege-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-promise-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-subscribe-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-approve-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-challenge-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-stop-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-interview-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-apply-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-knock-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-evaluate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-perjure-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-swear-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sandbag-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-understate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-condemn-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-evaluate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-applaud-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-approve-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-explode-verb-7">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-boo-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-challenge-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-question-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-feed_back-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-answer-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-apologize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-admit-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-curtsy-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-bow-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-salute-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-gesticulate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-acquit-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-evaluate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-convict-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-evaluate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sentence-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-convict-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-confide-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-trust-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sell_out-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-unwrap-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tally-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-count-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dub-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-translate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pronounce-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-talk-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-address-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-speak-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-take_the_floor-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-address-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-initial-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-approve-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-correspond-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-write-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-complete-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-write_down-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-allude-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-denote-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-e-mail-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-mail-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-compromise-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-agree-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-declaim-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-talk-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-move-verb-15">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-play-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-meet-verb-10">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-boat-race-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-boat-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-contend-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-campaign-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-war-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lose-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-win-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-beat-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-win-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-score-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-keep_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-check-verb-19">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tie-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-play-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-submit-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-surrender-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pepper-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-throw-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-defend-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-contend-verb-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-overshoot-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-aim-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-trigger-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fire-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-machine_gun-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-shoot-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hit-verb-16">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-aim-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-undershoot-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-blast-verb-7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-overtake-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-use-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-consume-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cannibalize-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-disassemble-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-mine-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dig-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-quarry-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dig-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-addict-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-use-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-eat-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-chew-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-swallow-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tuck_in-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-eat-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-toast-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drink-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-board-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-feed-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-board-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-consume-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wean-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-breastfeed-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-suckle-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drink-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-delight-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-use-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wine_and_dine-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drink-verb-2"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-eat-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fatten-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-feed-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fritter-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-consume-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-digest-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-consume-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-metabolize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-digest-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-smoke-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-exhale-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-inhale-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-puff-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smoke-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-light_up-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smoke-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-huff-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-drug-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-gulp-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-swallow-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-quench-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-consume-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-feel-verb-9">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-touch-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-paw-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-touch-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cling-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-attach-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-maul-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-injure-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-mutilate-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-massage-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bury-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cover-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-spur-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-injure-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dust-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-remove-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-polish-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rub-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-touch-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-smooth-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-roughen-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-abrade-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-amputate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-undercut-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fell-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tar-and-feather-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cover-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-circumcise-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-indent-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-hit-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tie_down-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fasten-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rake-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-scrape-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-strickle-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smooth-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dig-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-remove-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-butcher-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sew-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-join-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-darn-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-unbar-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-undo-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-unbolt-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-undo-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wring_out-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compress-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-unscrew-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rotate-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-seal-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fasten-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-mask-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cook-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-button-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-kick-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-punt-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-push-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-collate-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-gather-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rasp-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-file-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-compress-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-press-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-iron-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-heat-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-grate-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-beat-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-hit-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-toss-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-mix-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-plug_in-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-join-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-plug-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-insert-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-seduce-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep_together-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-masturbate-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-caress-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bear-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-2"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bring-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-come-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bring-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-come-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-take_away-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-leave-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pierce-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pick-verb-10">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-chop-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-brandish-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-hold-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-heft-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-lift-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-veil-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cover-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-unravel-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-separate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lace-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fasten-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wind-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-turn-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-transplant-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tease-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-brush-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-impress-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-press-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-wash-verb-7">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rinse-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-drape-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fold-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sit-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sit_down-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-stand-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-arise-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lie-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-lie_down-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-erase-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-scar-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-incise-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cut_out-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cleave-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cut-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-smother-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cover-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-smother-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cover-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-strangle-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compress-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-impale-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pierce-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bulldoze-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-wedge-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-spoon-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-immerse-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-post-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-announce-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pry-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-loosen-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-weld-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-blend-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-schematize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-organize-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-spin-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-extrude-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-consummate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep_together-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-brew-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sour-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cook-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cook-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-alter-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-quilt-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pad-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-quilt-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-embroider-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rack-verb-9">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-stretch-verb-7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pipe-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-applique-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-knit-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sew-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tat-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-knot-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tattoo-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-prickle-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-enamel-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fire-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-smelt-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-heat-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-gloss-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rub-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-illuminate-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-paint-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pencil-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-trace-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-chalk-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-trace-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-charcoal-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-trace-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-doodle-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-trace-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-write-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-spell-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cast-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-film-verb-2"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perform-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-stage-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-enter-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-act-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pedal-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-play-verb-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-harp-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pluck-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-trumpet-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-blow-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-till-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cultivate-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-plow-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dig-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hoe-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dig-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-etch-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-corrode-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-beat-verb-18">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-tread-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-grudge-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-resent-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fancy-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-like-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dislike-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-disapprove-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-like-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-approve-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-apprehend-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fear-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-mortify-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-abstain-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lament-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-grieve-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-tease-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-arouse-verb-7"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-disappoint-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-miss-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-repent-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-titillate-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-please-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dissatisfy-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-disappoint-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-intimidate-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-warn-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-enjoy-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-like-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-pump-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pour-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-push-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-3"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-press-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dance-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-step-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-call-verb-16">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-square_dance-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-stumble-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-walk-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-walk-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-step-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rappel-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-mountaineer-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-backpack-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pack-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bear_down_on-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sail-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-drive-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-ride-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-steer-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-travel-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-motorbike-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-kick-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-figure_skate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dance-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-speed_skate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-skate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-slalom-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-zigzag-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-water_ski-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-plane-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fly-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fly-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sailplane-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fly-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hydroplane-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-glide-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-levitate-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rise-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-canoe-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-paddle-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hang_glide-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-glide-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-chute-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-descend-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-glide-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-zigzag-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-turn-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-catch_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-follow-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-top_out-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rise-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-reach-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-travel-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-miss-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-travel-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-convoy-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-protect-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-chaperone-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-protect-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-body_guard-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-escort-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hunch-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-bend-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-line_up-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-wait-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-ripple-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-fold-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-approach-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-advance-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-stampede-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-run-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rush-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bustle-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rush-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-crouch-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-change_posture-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-overflow-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-run-verb-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-bring-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-come-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-leave_behind-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-leave-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-record-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-experience-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-dream-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sleep-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-notice-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-note-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-reach_one_s_nostrils-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smell-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sniff_out-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-smell-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-feel-verb-8">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-touch-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-discover-verb-7">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-watch-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-see-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-look-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-see-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-examine-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-look-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-see_double-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-see-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-survey-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-look-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-watch-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-look-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-listen-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-hear-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-catch-verb-14">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-listen-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-deafen-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-make_noise-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-taste-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-taste-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-spot-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-perceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-buy-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-choose-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-pay-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fund-verb-6">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-finance-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-transfer-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-move-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-reclaim-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-save-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sell-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-give-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-fetch-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-change_hands-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sell_out-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sell-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-default-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-owe-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-remit-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-transfer-verb-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-trade-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-buy-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-sell-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-save-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-buy-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hold_up-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-assail-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-rout_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-search-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-share-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-separate-verb-12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-admeasure-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-share-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-offer-verb-7">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-dicker-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-administer-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-execute-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-overcharge-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-charge-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-shop-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-buy-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-supplement-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-supply-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sack-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-destroy-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-undersell-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-discount-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-check_out-verb-5">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-buy-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-adjourn-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-meet-verb-7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-license-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-approve-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-subcontract-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-contract-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sign-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-endorse-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-ostracize-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-avoid-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-veto-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-vote-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cancel-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-schedule-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-burn-verb-8">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-burn-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-send_in-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-visit-verb-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-divorce-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-marry-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-arraign-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-charge-verb-2"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-indict-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-reserve-verb-4">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-procure-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-punish-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-estimate-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-suspend-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-punish-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-succeed-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-try-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-practice-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-work-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-burglarize-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-break_in-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-cheat-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-deceive-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-defect-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-protest-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-live-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-exist-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-survive-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-be-verb-11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-outlive-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-be-verb-11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-survive-verb-2">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-recuperate-verb-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-include-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-have-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-hesitate-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-doubt-verb-2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-postpone-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-cancel-verb-1"/>
+  <wn30schema:entails rdf:resource="&wn30instances;synset-reschedule-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-lead-verb-8">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-compete-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-sulk-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-resent-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-precipitate-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-condense-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-ice_up-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-freeze-verb-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-set_ablaze-verb-1">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-ignite-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-storm-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-rain-verb-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&wn30instances;synset-thunder-verb-3">
+  <wn30schema:entails rdf:resource="&wn30instances;synset-storm-verb-4"/>
+</rdf:Description>
+
+</rdf:RDF>
