@@ -1,0 +1,1368 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bn "http://babelnet.org/rdf/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY lemon "http://www.lemon-model.net/lemon#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY bn-lemon "http://babelnet.org/model/babelnet#" >
+    <!ENTITY ontolex "http://www.w3.org/ns/lemon/ontolex#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY fn "http://www.ontologydesignpatterns.org/ont/framenet/tbox/" >
+    <!ENTITY wn30schema "http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/" >
+    <!ENTITY semio "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#" >
+    <!ENTITY own "http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#" >
+    <!ENTITY wn30instances "http://www.ontologydesignpatterns.org/ont/wn/wn30/instances/" >
+    <!ENTITY vn31schema "http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#" >
+    <!ENTITY classif "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#" >
+    <!ENTITY special "http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#" >
+    <!ENTITY fschema "http://www.ontologydesignpatterns.org/ont/framester/framester.owl#" >
+    <!ENTITY dands "http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#" >
+    <!ENTITY tropes "http://www.ontologydesignpatterns.org/ont/wn/wn30/verbnounsynsettropes.rdf#" >
+    <!ENTITY wntroperole "http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-verbnountropes.rdf#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/framester/framester.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/ont/framester/framester.owl"
+     xmlns:fschema="http://www.ontologydesignpatterns.org/ont/framester/framester.owl#"
+     xmlns:tropes="http://www.ontologydesignpatterns.org/ont/wn/wn30/verbnounsynsettropes.rdf#"
+     xmlns:wntroperole="http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-verbnountropes.rdf#"
+     xmlns:dands="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#"
+     xmlns:semio="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#"
+     xmlns:vn31schema="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#"
+     xmlns:bn="http://babelnet.org/rdf/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bn-lemon="http://babelnet.org/model/babelnet#"
+     xmlns:wn30instances="http://www.ontologydesignpatterns.org/ont/wn/wn30/instances/"
+     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:classif="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"
+     xmlns:own="http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#"
+     xmlns:special="http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:wn30schema="http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/"
+     xmlns:fn="http://www.ontologydesignpatterns.org/ont/framenet/tbox/"
+     xmlns:lemon="http://www.lemon-model.net/lemon#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/framester/framester.owl">
+        <rdfs:comment>The schema for Framester data. It also aligns the OWL schemas for WordNet, VerbNet, FrameNet, BabelNet, etc., using the descriptionandsituation.owl and semiotics.owl ontology design patterns. It is also compatible (and aligned) to Lemon and Ontolex-Lemon.</rdfs:comment>
+        <owl:versionInfo>1.0, 19-04-2016 by Aldo Gangemi</owl:versionInfo>
+        <owl:imports rdf:resource="http://babelnet.org/rdf/"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/specialization.owl"/>
+        <owl:imports rdf:resource="&fn;schema.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#framenetDef -->
+
+    <owl:AnnotationProperty rdf:about="&fschema;framenetDef"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lemon-model.net/lemon#isReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="&lemon;isReferenceOf">
+        <owl:equivalentProperty rdf:resource="&ontolex;isReferenceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes -->
+
+    <owl:ObjectProperty rdf:about="&semio;denotes"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#expresses -->
+
+    <owl:ObjectProperty rdf:about="&semio;expresses"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#hasConceptualization -->
+
+    <owl:ObjectProperty rdf:about="&semio;hasConceptualization">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isConceptualizationOf -->
+
+    <owl:ObjectProperty rdf:about="&semio;isConceptualizationOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#relatedMeaning -->
+
+    <owl:ObjectProperty rdf:about="&semio;relatedMeaning">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#requires -->
+
+    <owl:ObjectProperty rdf:about="&special;requires">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/specialization.owl#specializes -->
+
+    <owl:ObjectProperty rdf:about="&special;specializes">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumedUnder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/framalLexUnitOf -->
+
+    <owl:ObjectProperty rdf:about="&fn;framalLexUnitOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumedUnder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasFERelation -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasFERelation">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasFrameElement -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasFrameElement">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasFrameRelation -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasFrameRelation">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasMember -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasMember">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasSemType -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasSemType">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;ontoType"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasSubType -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasSubType">
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasSuperFE -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasSuperFE">
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumedUnder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/hasSuperType -->
+
+    <owl:ObjectProperty rdf:about="&fn;hasSuperType">
+        <rdfs:subPropertyOf rdf:resource="&special;specializes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/inheritsFrom -->
+
+    <owl:ObjectProperty rdf:about="&fn;inheritsFrom">
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumedUnder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/isInheritedBy -->
+
+    <owl:ObjectProperty rdf:about="&fn;isInheritedBy">
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#binaryProjection -->
+
+    <owl:ObjectProperty rdf:about="&fschema;binaryProjection">
+        <rdfs:subPropertyOf rdf:resource="&fschema;hasProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#co-participation -->
+
+    <owl:ObjectProperty rdf:about="&fschema;co-participation">
+        <rdfs:subPropertyOf rdf:resource="&fschema;binaryProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#coreRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;coreRole">
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#externalRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;externalRole">
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#hasProjection -->
+
+    <owl:ObjectProperty rdf:about="&fschema;hasProjection">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+        <rdfs:domain rdf:resource="&fn;Frame"/>
+        <rdfs:range rdf:resource="&fschema;FrameProjection"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#necessaryRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;necessaryRole">
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#occurrenceOf -->
+
+    <owl:ObjectProperty rdf:about="&fschema;occurrenceOf">
+        <rdfs:range rdf:resource="&fschema;Frame"/>
+        <rdfs:domain rdf:resource="&fschema;FrameOccurrence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#ontoType -->
+
+    <owl:ObjectProperty rdf:about="&fschema;ontoType">
+        <rdfs:comment>The relation between unary projections of a frame, and their ontological type.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:range rdf:resource="&fschema;OntologyClass"/>
+        <rdfs:domain rdf:resource="&fschema;UnaryProjection"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#optionalRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;optionalRole">
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#projectionOf -->
+
+    <owl:ObjectProperty rdf:about="&fschema;projectionOf">
+        <rdfs:range rdf:resource="&fschema;Frame"/>
+        <rdfs:domain rdf:resource="&fschema;FrameProjection"/>
+        <owl:inverseOf rdf:resource="&fschema;hasProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#semanticRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;semanticRole">
+        <rdfs:domain rdf:resource="&fschema;Frame"/>
+        <rdfs:range rdf:resource="&fschema;SemanticRole"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;binaryProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#subsumedUnder -->
+
+    <owl:ObjectProperty rdf:about="&fschema;subsumedUnder">
+        <rdfs:range rdf:resource="&semio;Meaning"/>
+        <rdfs:domain rdf:resource="&semio;Meaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#subsumes -->
+
+    <owl:ObjectProperty rdf:about="&fschema;subsumes">
+        <rdfs:range rdf:resource="&semio;Meaning"/>
+        <rdfs:domain rdf:resource="&semio;Meaning"/>
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <owl:inverseOf rdf:resource="&fschema;subsumedUnder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#unaryProjection -->
+
+    <owl:ObjectProperty rdf:about="&fschema;unaryProjection">
+        <rdfs:subPropertyOf rdf:resource="&fschema;hasProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#vnRole -->
+
+    <owl:ObjectProperty rdf:about="&fschema;vnRole">
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#d0 -->
+
+    <owl:ObjectProperty rdf:about="&own;d0">
+        <rdfs:range rdf:resource="&fschema;OntologyClass"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ontolex;reference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#dul -->
+
+    <owl:ObjectProperty rdf:about="&own;dul">
+        <rdfs:range rdf:resource="&fschema;OntologyClass"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ontolex;reference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#hyp -->
+
+    <owl:ObjectProperty rdf:about="&own;hyp">
+        <rdfs:subPropertyOf rdf:resource="&special;specializes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#ihyp -->
+
+    <owl:ObjectProperty rdf:about="&own;ihyp">
+        <rdfs:subPropertyOf rdf:resource="&fschema;subsumedUnder"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#proxhyp -->
+
+    <owl:ObjectProperty rdf:about="&own;proxhyp">
+        <rdfs:subPropertyOf rdf:resource="&special;specializes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#containsVerbSense -->
+
+    <owl:ObjectProperty rdf:about="&vn31schema;containsVerbSense">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ontolex;lexicalizedSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#hasArgument -->
+
+    <owl:ObjectProperty rdf:about="&vn31schema;hasArgument">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;semanticRole"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#hasPredicate -->
+
+    <owl:ObjectProperty rdf:about="&vn31schema;hasPredicate">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;hasProjection"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#hasSelectionalRestriction -->
+
+    <owl:ObjectProperty rdf:about="&vn31schema;hasSelectionalRestriction">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&fschema;unaryProjection"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/adjectivePertainsTo -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;adjectivePertainsTo">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/adverbPertainsTo -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;adverbPertainsTo">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/antonymOf -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;antonymOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/attribute -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;attribute">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/causes -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;causes">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/classifies -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;classifies">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/containsWordSense -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;containsWordSense">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ontolex;lexicalizedSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/derivationallyRelated -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;derivationallyRelated">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/entails -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;entails">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/holonymOf -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;holonymOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/hyponymOf -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;hyponymOf">
+        <rdfs:subPropertyOf rdf:resource="&special;specializes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/instanceOf -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;instanceOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;hasConceptualization"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/meronymOf -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;meronymOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/participle -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;participle">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/sameVerbGroupAs -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;sameVerbGroupAs">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/seeAlso -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;seeAlso">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/sense -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;sense">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ontolex;sense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/similarTo -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;similarTo">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/word -->
+
+    <owl:ObjectProperty rdf:about="&wn30schema;word">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/verbnounsynsettropes.rdf#hasTrope -->
+
+    <owl:ObjectProperty rdf:about="&tropes;hasTrope">
+        <rdfs:subPropertyOf rdf:resource="&fschema;unaryProjection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#concept -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;concept">
+        <rdfs:subPropertyOf rdf:resource="&semio;hasConceptualization"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&ontolex;LexicalConcept"/>
+        <rdfs:domain rdf:resource="&ontolex;OntologyEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#denotes -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;denotes">
+        <rdfs:subPropertyOf rdf:resource="&semio;denotes"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalEntry"/>
+        <rdfs:range rdf:resource="&ontolex;OntologyEntity"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontolex;sense"/>
+            <rdf:Description rdf:about="&ontolex;reference"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#evokes -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;evokes">
+        <rdfs:subPropertyOf rdf:resource="&semio;expresses"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&ontolex;LexicalConcept"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalEntry"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontolex;sense"/>
+            <rdf:Description rdf:about="&ontolex;isLexicalizedSenseOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isConceptOf">
+        <owl:inverseOf rdf:resource="&ontolex;concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isDenotedBy -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isDenotedBy">
+        <owl:inverseOf rdf:resource="&ontolex;denotes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isEvokedBy">
+        <owl:inverseOf rdf:resource="&ontolex;evokes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isLexicalizedSenseOf">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&ontolex;lexicalizedSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isReferenceOf">
+        <owl:inverseOf rdf:resource="&ontolex;reference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isSenseOf -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;isSenseOf">
+        <owl:inverseOf rdf:resource="&ontolex;sense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#lexicalizedSense -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;lexicalizedSense">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalConcept"/>
+        <rdfs:range rdf:resource="&ontolex;LexicalSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#reference -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;reference">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&semio;isConceptualizationOf"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalSense"/>
+        <rdfs:range rdf:resource="&ontolex;OntologyEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#relates -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;relates">
+        <rdfs:subPropertyOf rdf:resource="&semio;relatedMeaning"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalSense"/>
+        <rdfs:range rdf:resource="&ontolex;LexicalSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#sense -->
+
+    <owl:ObjectProperty rdf:about="&ontolex;sense">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&semio;expresses"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&ontolex;LexicalEntry"/>
+        <rdfs:range rdf:resource="&ontolex;LexicalSense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://babelnet.org/model/babelnet#Sense -->
+
+    <owl:Class rdf:about="&bn-lemon;Sense">
+        <rdfs:subClassOf rdf:resource="&lemon;LexicalSense"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://babelnet.org/model/babelnet#Synset -->
+
+    <owl:Class rdf:about="&bn-lemon;Synset">
+        <rdfs:subClassOf rdf:resource="&skos;Concept"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lemon-model.net/lemon#LexicalSense -->
+
+    <owl:Class rdf:about="&lemon;LexicalSense">
+        <owl:equivalentClass rdf:resource="&ontolex;LexicalSense"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept -->
+
+    <owl:Class rdf:about="&classif;Concept">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#InformationEntity -->
+
+    <owl:Class rdf:about="&semio;InformationEntity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning -->
+
+    <owl:Class rdf:about="&semio;Meaning"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference -->
+
+    <owl:Class rdf:about="&semio;Reference"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/CorpDoc -->
+
+    <owl:Class rdf:about="&fn;CorpDoc">
+        <rdfs:subClassOf rdf:resource="&semio;InformationEntity"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/Document -->
+
+    <owl:Class rdf:about="&fn;Document">
+        <rdfs:subClassOf rdf:resource="&semio;InformationEntity"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/FECoreSet -->
+
+    <owl:Class rdf:about="&fn;FECoreSet">
+        <rdfs:subClassOf rdf:resource="&fschema;FrameProjection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/FramalLexUnit -->
+
+    <owl:Class rdf:about="&fn;FramalLexUnit">
+        <rdfs:subClassOf rdf:resource="&fschema;SenseFrame"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/Frame -->
+
+    <owl:Class rdf:about="&fn;Frame">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&fschema;ConceptualFrame"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/FrameElement -->
+
+    <owl:Class rdf:about="&fn;FrameElement">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/GenericFE -->
+
+    <owl:Class rdf:about="&fn;GenericFE">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/LexUnit -->
+
+    <owl:Class rdf:about="&fn;LexUnit">
+        <rdfs:subClassOf rdf:resource="&semio;InformationEntity"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalEntry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/Lexeme -->
+
+    <owl:Class rdf:about="&fn;Lexeme">
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalEntry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/SemType -->
+
+    <owl:Class rdf:about="&fn;SemType">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticType"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;OntologyEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framenet/tbox/Sentence -->
+
+    <owl:Class rdf:about="&fn;Sentence">
+        <rdfs:subClassOf rdf:resource="&semio;InformationEntity"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#BinaryProjection -->
+
+    <owl:Class rdf:about="&fschema;BinaryProjection">
+        <rdfs:subClassOf rdf:resource="&fschema;FrameProjection"/>
+        <rdfs:comment>Any binary projection of a frame relation: properties, roles, tropes, etc.
+Assuming frame semantics, each meaning consists of activated frames, whose formal counterparts are multigrade relations.
+When only a relation between two arguments of the multigrade predicate is considered, it can be formalized as a binary projection of a frame relation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#CoParticipationRelation -->
+
+    <owl:Class rdf:about="&fschema;CoParticipationRelation">
+        <rdfs:subClassOf rdf:resource="&fschema;BinaryProjection"/>
+        <rdfs:subClassOf rdf:resource="&fschema;OntologyProperty"/>
+        <rdfs:comment>Any binary projection of a frame relation involving arguments other than the frame situation, e.g. a &apos;buys&apos; relation between a buyer and a product.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#ConceptualFrame -->
+
+    <owl:Class rdf:about="&fschema;ConceptualFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Frames as intended by Fillmore&apos;s frame semantics: the basic elements of semantic intepretation of natural language, independent from a specific lexicon (but not necessarily from a specific culture), necessarily evoked by any word, typically associated with a real world occurrence (situation) when evoked.
+When considered as multigrade predicates (n-ary relations, with role places and value positions within places), frame elements are binary projections of a multigrade predicate, where the first argument of the projection is always the (reified) event or situation occurring wrt to the evoked frame.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#DataFrame -->
+
+    <owl:Class rdf:about="&fschema;DataFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Frames extracted from data structures, typically based on graph measures.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#EncyclopedicFrame -->
+
+    <owl:Class rdf:about="&fschema;EncyclopedicFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Frames extracted from link structures, typically based on graph measures, e.g. the patterns emerging out of the analysis of Wikipedia links when interpreted on the basis of the types of entities described in its pages.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#Frame -->
+
+    <owl:Class rdf:about="&fschema;Frame">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>The main class of the Framester schema. It is fully compliant to framenet:Frame, but extends it by providing alignments to the D&amp;S and Semiotics ontology design patterns, and novel elements to deal with incomplete framal predicates, non-conceptual frames, etc.
+In the dual frame semantics implemented here by means of OWL2 punning, each frame instance is also a subclass of the fschema:FrameOccurrence class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#FrameOccurrence -->
+
+    <owl:Class rdf:about="&fschema;FrameOccurrence">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>The occurrence of a frame, i.e. a &apos;frame situation&apos;.
+Its automatic classification under a frame is not trivial, since a frame is a reification of a multigrade predicate, and its semantic roles can be more or less required for a frame to be instantiated.
+When applicable, OWL keys can be used to express the minimal conditions, under which a frame class can be instantiated into a FrameOccurrence.
+Frame can be also (extensionally) represented as subclasses of FrameOccurrence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#FrameProjection -->
+
+    <owl:Class rdf:about="&fschema;FrameProjection">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Any projection of a frame relation: senses, synsets, types, classes, properties, roles, kinds, concepts, sorts, etc.
+Assuming frame semantics, each meaning consists of activated frames, whose formal counterparts are multigrade relations.
+When only an aspect of that frame is considered, it can be formalized as a (typically unary or binary) projection of a frame relation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#GenericRole -->
+
+    <owl:Class rdf:about="&fschema;GenericRole">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+        <rdfs:comment>A generic role, acting as a top-level entity (global subsumer) for any semantic role coming from existing or novel resources. It is intended to provide a hub for role interoperability, as well as for assigning frames to roles as well, in order to abstract out a purely framal representation from neo-Davidsonian sentence parses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#LexicalFrame -->
+
+    <owl:Class rdf:about="&fschema;LexicalFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Lexicalized frames.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#MicroFrame -->
+
+    <owl:Class rdf:about="&fschema;MicroFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Frames extracted from microdata, templates, infoboxes, etc. E.g. embedded JSON-LD, Microformat, schema.org, emerging RDFa patterns.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#OntologyClass -->
+
+    <owl:Class rdf:about="&fschema;OntologyClass">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticType"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;OntologyEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#OntologyProperty -->
+
+    <owl:Class rdf:about="&fschema;OntologyProperty">
+        <rdfs:subClassOf rdf:resource="&fschema;BinaryProjection"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;OntologyEntity"/>
+        <rdfs:comment>A binary relation from an existing ontology or schema.
+The frame semantics assumption here is that each ontology property is a projection of an underlying multigrade predicate that corresponds to the conceptualization of the predicate. E.g. a &apos;part of&apos; relation between body parts can be the binary projection of a Part-Whole frame specialized for organic body parts (notice that the multigrade predicate may also involve time, location, manner of being connected, functional dependencies, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#SchemaFrame -->
+
+    <owl:Class rdf:about="&fschema;SchemaFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;Frame"/>
+        <rdfs:comment>Frames extracted from relational data schemas or ontology schemas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#SemanticRole -->
+
+    <owl:Class rdf:about="&fschema;SemanticRole">
+        <rdfs:subClassOf rdf:resource="&fschema;BinaryProjection"/>
+        <rdfs:subClassOf rdf:resource="&fschema;OntologyProperty"/>
+        <rdfs:comment>A binary projection from a frame (considered as a multigrade predicate), whose first argument is always a frame situation (a &apos;target&apos; denotation in FrameNet terminology). Semantic roles are not necessarily bound to syntactic valences or specific lexicalizations.
+Each role can also be seen as an (intensional) individual concept defined by a Frame (D&amp;S style).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#SemanticType -->
+
+    <owl:Class rdf:about="&fschema;SemanticType">
+        <rdfs:subClassOf rdf:resource="&fschema;UnaryProjection"/>
+        <rdfs:comment>Any type from either lexica or ontologies, which are not explicitly declared as tropes (i.e. as unary projections of a known frame).
+However, from the perspective of frame semantics, types are unary projections either, because their conceptualization depends on a (usually implicit) multigrade predicate.
+E.g. the &apos;Propeller&apos; of a boat is a unary projection of a &apos;Boat Propelling&apos; frame. This is a typical trope, but even &apos;Boat&apos; (which is hardly considered a trope) can be a unary projection of e.g. a &apos;Boat Navigation&apos; frame, be it explicit or not.
+In other words, the frame dependence of a semantic type is &apos;external&apos; to the argument it is applied in a frame: FrameNet semantic types, VerbNet selectional restrictions, WordNet synsets, schema classes, are all unary projection of frames that are independent from the frame they can be used upon. 
+For example, if I use wn:synset-boat-1 to type the theme role of a Shipyard frame, the main multigrade predicate for wn:synset-boat-1 is still Boat Navigation. On the contrary, Propeller is typically applied to the Boat Propelling frame.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#SenseFrame -->
+
+    <owl:Class rdf:about="&fschema;SenseFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;LexicalFrame"/>
+        <rdfs:comment>Frames evoked by specific (senses of) words.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#SynsetFrame -->
+
+    <owl:Class rdf:about="&fschema;SynsetFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;LexicalFrame"/>
+        <rdfs:comment>Frames evoked by any (sense of a) word from a collection of words characterized by equivalent senses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#Trope -->
+
+    <owl:Class rdf:about="&fschema;Trope">
+        <rdfs:subClassOf rdf:resource="&fschema;OntologyProperty"/>
+        <rdfs:subClassOf rdf:resource="&fschema;UnaryProjection"/>
+        <rdfs:comment>Any reification of an instance of a frame projection, e.g. Barack_Obama career station from 2012 to 2016, Barack_Obama as President of USA. It is typical of trope-based approaches to n-ary relation representation, such as fluent representation of (Welty and Fikes, 2006).
+Pragmatically, they can be represented as (intensional) projections, (extensional) classes, and (extensional) properties that specialize more general roles, e.g. wn30instances:synset-charger-noun-2 is a trope of the frame framestersyn:Charge.v.24, which can also express a class conceptualizing the range of the semantic role verbnountropes:result when used with that frame, but it can be used more easily as a subproperty of verbnountropes:result, and declared to have framestersyn:Charge.v.24 (i.e. a frame situation interpreted as an owl:Class) as domain, and a selectional restriction as range.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#UnaryProjection -->
+
+    <owl:Class rdf:about="&fschema;UnaryProjection">
+        <rdfs:subClassOf rdf:resource="&classif;Concept"/>
+        <rdfs:subClassOf rdf:resource="&fschema;FrameProjection"/>
+        <rdfs:comment>Any unary projection of a frame relation: senses, synsets, types, classes, kinds, concepts, sorts, etc.
+Assuming frame semantics, each meaning consists of activated frames, whose formal counterparts are multigrade predicates.
+When only one aspect of that predicate is considered, it can be formalized as a unary projection of a frame relation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#WnSenseFrame -->
+
+    <owl:Class rdf:about="&fschema;WnSenseFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;SenseFrame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/framester/framester.owl#WnSynsetFrame -->
+
+    <owl:Class rdf:about="&fschema;WnSynsetFrame">
+        <rdfs:subClassOf rdf:resource="&fschema;SynsetFrame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#Argument -->
+
+    <owl:Class rdf:about="&vn31schema;Argument">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#GenericArgument -->
+
+    <owl:Class rdf:about="&vn31schema;GenericArgument">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#Predicate -->
+
+    <owl:Class rdf:about="&vn31schema;Predicate">
+        <rdfs:subClassOf rdf:resource="&fschema;SenseFrame"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#SelectionalRestriction -->
+
+    <owl:Class rdf:about="&vn31schema;SelectionalRestriction">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#VerbClass -->
+
+    <owl:Class rdf:about="&vn31schema;VerbClass">
+        <rdfs:subClassOf rdf:resource="&fschema;SynsetFrame"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/vn/vnschema31.owl#VerbSense -->
+
+    <owl:Class rdf:about="&vn31schema;VerbSense">
+        <rdfs:subClassOf rdf:resource="&fschema;SenseFrame"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/SuperSense -->
+
+    <owl:Class rdf:about="&wn30schema;SuperSense">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticType"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/Synset -->
+
+    <owl:Class rdf:about="&wn30schema;Synset">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/Word -->
+
+    <owl:Class rdf:about="&wn30schema;Word">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalEntry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/schema/WordSense -->
+
+    <owl:Class rdf:about="&wn30schema;WordSense">
+        <rdfs:subClassOf rdf:resource="&ontolex;LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/wn/wn30/wordnet-verbnountropes.rdf#TropeRole -->
+
+    <owl:Class rdf:about="&wntroperole;TropeRole">
+        <rdfs:subClassOf rdf:resource="&fschema;SemanticRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="&owl;Thing">
+        <rdfs:subClassOf rdf:resource="&semio;Reference"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalConcept -->
+
+    <owl:Class rdf:about="&ontolex;LexicalConcept">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalEntry -->
+
+    <owl:Class rdf:about="&ontolex;LexicalEntry">
+        <rdfs:subClassOf rdf:resource="&semio;InformationEntity"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalSense -->
+
+    <owl:Class rdf:about="&ontolex;LexicalSense">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#OntologyEntity -->
+
+    <owl:Class rdf:about="&ontolex;OntologyEntity">
+        <rdfs:subClassOf rdf:resource="&semio;Meaning"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#SenseRelation -->
+
+    <owl:Class rdf:about="&ontolex;SenseRelation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ontolex;relates"/>
+                <owl:onClass rdf:resource="&ontolex;LexicalSense"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
