@@ -1,2 +1,5 @@
 
 framester filter=lfs diff=lfs merge=lfs -text
+framester/predicate-matrix/predicatematrix.ttl filter=lfs diff=lfs merge=lfs -text
+framester/deepknownet-rdf/deepknownet.ttl filter=lfs diff=lfs merge=lfs -text
+framester/WordNet-30-RDF/wordnet-wordsensesandwords-withoffsets.rdf filter=lfs diff=lfs merge=lfs -text
